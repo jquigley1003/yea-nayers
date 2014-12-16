@@ -2,7 +2,7 @@ angular
     .module('YeaNayers', [
         'ngRoute',
         'templates'
-    ]).config(function ($routeProvider) {
+    ]).config(['$routeProvider',function ($routeProvider) {
         $routeProvider
             .when('/', {
                 templateUrl: 'home.html',
@@ -10,4 +10,4 @@ angular
             });
         // enable HTML5 Mode for SEO
         // $locationProvider.html5Mode(true);
-    });
+    }]);
