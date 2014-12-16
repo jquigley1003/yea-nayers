@@ -1,16 +1,25 @@
 angular.module('YeaNayers', [
-        'ngRoute',
-        'templates'
+    'ngAnimate',
+    'ui.router'
 ])
-.config(['$routeProvider', '$locationProvider', function ($routeProvider, $locationProvider) {
-        $routeProvider
-            .when('/', {
-                templateUrl: 'home.html',
-                controller: 'HomeCtrl'
-            });
-        // enable HTML5 Mode for SEO
-        $locationProvider.html5Mode({
-            enabled: true,
-            requireBase: false
+.config(['$stateProvider', '$urlRouterProvider', '$locationProvider', 
+    function($stateProvider, $urlRouterProvider, $locationProvider) {
+    /**
+     * Routes and States
+     */
+    $stateProvider
+        .state('home', {
+            url: '/',
+            templateUrl: 'home.html',
+            controller: 'HomeCtrl'
         });
+
+    // default fall back route
+    // $urlRouterProvider.otherwise('/');
+
+    // enable HTML5 Mode for SEO
+    // $locationProvider.html5Mode({
+    //     enabled: true,
+    //     requireBase: false
+    // });
 }]);
