@@ -1,13 +1,16 @@
-angular
-    .module('YeaNayers', [
+angular.module('YeaNayers', [
         'ngRoute',
         'templates'
-    ]).config(['$routeProvider',function ($routeProvider) {
+])
+.config(['$routeProvider', '$locationProvider', function ($routeProvider, $locationProvider) {
         $routeProvider
             .when('/', {
                 templateUrl: 'home.html',
                 controller: 'HomeCtrl'
             });
         // enable HTML5 Mode for SEO
-        // $locationProvider.html5Mode(true);
-    }]);
+        $locationProvider.html5Mode({
+            enabled: true,
+            requireBase: false
+        });
+}]);
