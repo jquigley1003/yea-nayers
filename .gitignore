@@ -11,4 +11,5 @@
 .DS_Store
 /log/*.log
 /tmp
+public/assets
 
