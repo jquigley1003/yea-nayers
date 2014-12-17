@@ -1,6 +1,7 @@
 source 'https://rubygems.org'
 ruby '2.1.2'
 
+gem 'd3-rails'
 gem 'bower-rails'
 gem 'angular-rails-templates'
 gem 'bootstrap-sass', '~> 3.2.0'

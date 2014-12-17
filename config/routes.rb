@@ -2,6 +2,8 @@ Rails.application.routes.draw do
 
   root 'application#index'
 
+  resources :maps
+
   # get '*path' => 'application#index'
 
   # The priority is based upon order of creation: first created -> highest priority.
