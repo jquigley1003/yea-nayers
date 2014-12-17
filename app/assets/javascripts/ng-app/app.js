@@ -1,6 +1,7 @@
 angular.module('YeaNayers', [
     'ngAnimate',
-    'ui.router'
+    'ui.router',
+    'templates'
 ])
 .config(['$stateProvider', '$urlRouterProvider', '$locationProvider', 
     function($stateProvider, $urlRouterProvider, $locationProvider) {
@@ -9,7 +10,7 @@ angular.module('YeaNayers', [
      */
     $stateProvider
         .state('home', {
-            url: '/',
+            url: '',
             templateUrl: 'home.html',
             controller: 'HomeCtrl'
         })
@@ -38,7 +39,7 @@ angular.module('YeaNayers', [
             });
 
     // default fall back route
-    // $urlRouterProvider.otherwise('/');
+    $urlRouterProvider.otherwise('/');
 
     // enable HTML5 Mode for SEO
     // $locationProvider.html5Mode({

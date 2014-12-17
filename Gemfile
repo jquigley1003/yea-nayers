@@ -2,7 +2,7 @@ source 'https://rubygems.org'
 ruby '2.1.2'
 
 gem 'bower-rails'
-# gem 'angular-rails-templates'
+gem 'angular-rails-templates'
 gem 'bootstrap-sass', '~> 3.2.0'
 gem 'autoprefixer-rails'
 gem "twitter-bootstrap-rails"
