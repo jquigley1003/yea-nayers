@@ -1,10 +1,14 @@
-<div class="container">
+<div ng-include="'navbar.html'" ></div>
+<div style="position:relative; width:100%;" class="container">
   <h1>YeaNayers Map</h1>
-  <ul>
-    <li ng-repeat="thing in things">{{ thing }}</li>
-  </ul>
-  <div my-map-two ><div>
-  <div>{{ bills }}</div>  
-
+  <div>
+    <form class="form-inline" role="form" ng-submit="searchBills()" novalidate>
+      <label class="sr-only">Subject</label>
+      <input class="form-control" type="text" ng-model="billForm.query" required placeholder="Search for Bills"/><br>
+      <button class="btn btn-primary btn-md" type="submit">Submit</button>
+    </form>
+  </div>
+  <div my-map-two ></div>
+  <div style="position:absolute; left:900px; height:600px; overflow:scroll;" ng-include="'bills.html'"></div>
 
 </div>

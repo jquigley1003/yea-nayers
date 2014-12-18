@@ -1,49 +1,32 @@
 angular.module('YeaNayers', [
-    'ngAnimate',
-    'ui.router',
-    'templates'
+	'ngAnimate',
+	'ui.router',
+	'templates'
 ])
-.config(['$stateProvider', '$urlRouterProvider', '$locationProvider', 
-    function($stateProvider, $urlRouterProvider, $locationProvider) {
-    /**
-     * Routes and States
-     */
-    $stateProvider
-        .state('home', {
-            url: '',
-            templateUrl: 'home.html',
-            controller: 'HomeCtrl'
-        })
+.config(['$stateProvider', '$urlRouterProvider', 
+	function($stateProvider, $urlRouterProvider) {
+	/**
+	 * Routes and States
+	 */
+	$stateProvider
+		.state('home', {
+			url: '',
+			templateUrl: 'home.html',
+			controller: 'HomeCtrl'
+		})
 
-        // an abstract state that just serves as a
-        // parent for the below child states
-        .state('dashboard', {
-            abstract: true,
-            url: '/dashboard',
-            templateUrl: 'dashboard/layout.html'
-        })
-            // the default route when someone hits dashboard
-            .state('dashboard.one', {
-                url: '',
-                templateUrl: 'dashboard/one.html'
-            })
-            // this is /dashboard/two
-            .state('dashboard.two', {
-                url: '/two',
-                templateUrl: 'dashboard/two.html'
-            })
-            // this is /dashboard/three
-            .state('dashboard.three', {
-                url: '/three',
-                templateUrl: 'dashboard/three.html'
-            });
+		.state('bill_detail', {
+			url: '/bill_detail',
+			templateUrl: 'bill_detail.html',
+			controller: 'BillDetailCtrl'
+		});
 
-    // default fall back route
-    $urlRouterProvider.otherwise('/');
+	// default fall back route
+	$urlRouterProvider.otherwise('/');
 
-    // enable HTML5 Mode for SEO
-    // $locationProvider.html5Mode({
-    //     enabled: true,
-    //     requireBase: false
-    // });
+	// enable HTML5 Mode for SEO
+	// $locationProvider.html5Mode({
+	//     enabled: true,
+	//     requireBase: false
+	// });
 }]);
