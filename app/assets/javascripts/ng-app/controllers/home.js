@@ -38,6 +38,7 @@ angular.module('YeaNayers')
         $http.get(govTrackUrl3).success(function(data) {
           $scope.congressionalVoteByMember = data.objects;
           console.log('congressionalVoteByMember.length: ' + $scope.congressionalVoteByMember.length);
+          
         });
 
         var govTrackUrl4 = 'https://www.govtrack.us/api/v2/vote_voter?vote=' + 

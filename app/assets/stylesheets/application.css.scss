@@ -13,6 +13,7 @@
  */
 @import "ng-app/main";
 
+
 path {
 fill: #ccc;
   stroke: #000000;
@@ -21,6 +22,23 @@ fill: #ccc;
 
 path:hover {
   fill: red;
+}
+
+
+/*
+path {
+  stroke-linejoin: round;
+  stroke-linecap: round;
+}
+*/
+.background {
+  fill: none;
+  stroke: #ddd;
+}
+
+.foreground {
+  fill: none;
+  pointer-events: all;
 }
 
 .counties {
@@ -49,3 +67,6 @@ path:hover {
   background-color: #f9f9f9;
 }
 
+.selected {
+  fill: #F08C00;
+}

@@ -24,7 +24,7 @@ angular.module('YeaNayers').directive('myMap', function(){
 					.enter().append("path")
 					.attr("d", path);	
 			});
-
+			
 			function zoom() {
 				g.attr("transform", "translate("
 						+ d3.event.translate
