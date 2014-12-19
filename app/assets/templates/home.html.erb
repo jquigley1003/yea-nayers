@@ -1,14 +1,22 @@
 <div ng-include="'navbar.html'" ></div>
 <div style="position:relative; width:100%;" class="container">
   <h1>YeaNayers Map</h1>
-  <div>
-    <form class="form-inline" role="form" ng-submit="searchBills()" novalidate>
+<!--     <form class="form-inline" role="form" ng-submit="searchBills()" novalidate>
       <label class="sr-only">Subject</label>
       <input class="form-control" type="text" ng-model="billForm.query" required placeholder="Search for Bills"/><br>
       <button class="btn btn-primary btn-md" type="submit">Submit</button>
     </form>
+ -->
+  <form class="form-inline" ng-submit="searchBills()" role="form" novalidate>
+  <div class="form-group">
+    <div class="input-group">
+      <label class="sr-only">Subject</label>
+      <input type="text" class="form-control" ng-model="billForm.query" required placeholder="Search for Bills">
+    </div>
   </div>
-  <div my-map-two ></div>
+  <button type="submit" class="btn btn-primary btn-md">Search Now</button>
+</form>
+  <div my-map ></div>
   <div style="position:absolute; left:900px; height:600px; overflow:scroll;" ng-include="'bills.html'"></div>
 
 </div>

@@ -1,3 +1,4 @@
+<h2>Bills in the 113th U.S. Congress</h2>
 <div class="bill-frame" ng-repeat="bill in bills" ng-click="findVoteRollCall(bill)">
   <p style="font-weight:bold;">{{bill.title}}</p>
   <p>{{bill.current_status_label}}</p>
@@ -5,7 +6,7 @@
   <p>Status Description: {{bill.current_status_description}}</p>
   <div ng-show="bill.voteInfo">
     <p>{{bill.sponsor.id}}</p>
-    <p>{{bill.sponsor.name}}</p>
+    <p><span style="font-weight:bold;">Bill Sponsor: </span>{{bill.sponsor.name}}</p>
     <p><img ng-src="https://www.govtrack.us/data/photos/{{bill.sponsor.id}}-100px.jpeg" /></p>
   </div>
 </div>

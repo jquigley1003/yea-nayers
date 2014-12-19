@@ -1,0 +1,2060 @@
+{
+meta: {
+limit: 100,
+offset: 0,
+total_count: 16
+},
+objects: [
+{
+category: "passage",
+category_label: "Passage",
+chamber: "house",
+chamber_label: "House",
+congress: 113,
+created: "2014-12-11T21:37:00",
+id: 116058,
+link: "https://www.govtrack.us/congress/votes/113-2014/h563",
+missing_data: false,
+number: 563,
+options: [],
+question: "H.R. 83: Consolidated and Further Continuing Appropriations Act, 2015",
+question_details: "Concurring in the Senate Amendment in the House",
+related_amendment: null,
+related_bill: {},
+required: "1/2",
+result: "Passed",
+session: "2014",
+source: "house",
+source_label: "house.gov",
+total_minus: 206,
+total_other: 10,
+total_plus: 219,
+vote_type: "Concurring in the Senate Amendment"
+},
+{
+category: "procedural",
+category_label: "Procedural",
+chamber: "senate",
+chamber_label: "Senate",
+congress: 113,
+created: "2014-12-13T12:52:00",
+id: 116071,
+link: "https://www.govtrack.us/congress/votes/113-2014/s328",
+missing_data: false,
+number: 328,
+options: [
+{
+id: 444801,
+key: "+",
+value: "Yea",
+vote: 116071
+},
+{
+id: 444802,
+key: "-",
+value: "Nay",
+vote: 116071
+},
+{
+id: 444803,
+key: "P",
+value: "Present",
+vote: 116071
+},
+{
+id: 444804,
+key: "0",
+value: "Not Voting",
+vote: 116071
+}
+],
+question: "Motion to Proceed on H.R. 83: To require the Secretary of the Interior to assemble a team of technical, policy, and financial experts to ...",
+question_details: null,
+related_amendment: null,
+related_bill: {
+bill_resolution_type: "bill",
+bill_type: "house_bill",
+bill_type_label: "H.R.",
+congress: 113,
+current_status: "enacted_signed",
+current_status_date: "2014-12-16",
+current_status_description: "This bill was enacted after being signed by the President on December 16, 2014.",
+current_status_label: "Enacted — Signed by the President",
+display_number: "H.R. 83",
+docs_house_gov_postdate: "2014-12-09T19:23:59",
+id: 256160,
+introduced_date: "2013-01-03",
+is_alive: false,
+is_current: true,
+link: "https://www.govtrack.us/congress/bills/113/hr83",
+major_actions: [
+[
+"datetime.datetime(2013, 1, 3, 0, 0)",
+2,
+"Referred to the House Committee on Energy and Commerce.",
+"<action datetime="2013-01-03" state="REFERRED"> <text>Referred to the House Committee on Energy and Commerce.</text> </action> "
+],
+[
+"datetime.datetime(2013, 7, 17, 0, 0)",
+3,
+"Ordered to be Reported by Unanimous Consent.",
+"<calendar datetime="2013-07-17" state="REPORTED"> <text>Ordered to be Reported by Unanimous Consent.</text> </calendar> "
+],
+[
+"datetime.datetime(2014, 9, 15, 16, 25)",
+4,
+"On motion to suspend the rules and pass the bill, as amended Agreed to by voice vote.",
+"<vote how="by voice vote" type="vote" datetime="2014-09-15T16:25:00-04:00" where="h" result="pass" state="PASS_OVER:HOUSE"> <text>On motion to suspend the rules and pass the bill, as amended Agreed to by voice vote.</text> <reference ref="CR H7462" label="text"/> </vote> "
+],
+[
+"datetime.datetime(2014, 9, 18, 0, 0)",
+11,
+"Passed Senate with an amendment by Unanimous Consent.",
+"<vote how="by Unanimous Consent" type="vote2" datetime="2014-09-18" where="s" result="pass" state="PASS_BACK:SENATE"> <text>Passed Senate with an amendment by Unanimous Consent.</text> </vote> "
+],
+[
+"datetime.datetime(2014, 12, 11, 21, 38)",
+10,
+"On motion that the House agree with an amendment to the Senate amendment Agreed to by the Yeas and Nays: 219 - 206 (Roll No. 563).",
+"<vote how="roll" type="pingpong" roll="563" datetime="2014-12-11T21:38:00-05:00" where="h" result="pass" state="PASS_BACK:HOUSE"> <text>On motion that the House agree with an amendment to the Senate amendment Agreed to by the Yeas and Nays: 219 - 206 (Roll No. 563).</text> <reference ref="CR H9076-9273" label="text as House agreed to Senate amendment with an amendment"/> </vote> "
+],
+[
+"datetime.datetime(2014, 12, 13, 0, 0)",
+9,
+"Senate agreed to the House amendment to the Senate amendment to H.R. 83 by Yea-Nay Vote. 56 - 40. Record Vote Number: 354.",
+"<vote how="roll" type="pingpong" roll="354" datetime="2014-12-13" where="s" result="pass" state="PASSED:BILL"> <text>Senate agreed to the House amendment to the Senate amendment to H.R. 83 by Yea-Nay Vote. 56 - 40. Record Vote Number: 354.</text> <reference ref="CR S6813-6814" label="consideration"/> </vote> "
+],
+[
+"datetime.datetime(2014, 12, 16, 0, 0)",
+28,
+"Signed by President.",
+"<signed datetime="2014-12-16" state="ENACTED:SIGNED"> <text>Signed by President.</text> </signed> "
+]
+],
+noun: "bill",
+number: 83,
+senate_floor_schedule_postdate: null,
+sliplawnum: null,
+sliplawpubpriv: null,
+source: "thomas-congproj",
+source_link: null,
+sponsor: 400073,
+sponsor_role: 42711,
+thomas_link: "http://thomas.loc.gov/cgi-bin/bdquery/z?d113:hr83:",
+title: "H.R. 83: To require the Secretary of the Interior to assemble a team of technical, policy, and financial experts to address the energy needs of the insular areas of the United States and the Freely Associated States through the development of energy actio",
+title_without_number: "To require the Secretary of the Interior to assemble a team of technical, policy, and financial experts to address the energy needs of the insular areas of the United States and the Freely Associated States through the development of energy action plans aimed at promoting access to affordable, reliable energy, including increasing use of indigenous clean-energy resources, and for other purposes.",
+titles: [
+[
+"official",
+"introduced",
+"To require the Secretary of the Interior to assemble a team of technical, policy, and financial experts to address the energy needs of the insular areas of the United States and the Freely Associated States through the development of action plans aimed at reducing reliance on imported fossil fuels and increasing use of indigenous clean-energy resources, and for other purposes."
+],
+[
+"official",
+"amended by house",
+"To require the Secretary of the Interior to assemble a team of technical, policy, and financial experts to address the energy needs of the insular areas of the United States and the Freely Associated States through the development of energy action plans aimed at promoting access to affordable, reliable energy, including increasing use of indigenous clean-energy resources, and for other purposes."
+]
+]
+},
+required: "1/2",
+result: "Motion to Proceed Agreed to",
+session: "2014",
+source: "senate",
+source_label: "senate.gov",
+total_minus: 40,
+total_other: 8,
+total_plus: 52,
+vote_type: "On the Motion to Proceed"
+},
+{
+category: "procedural",
+category_label: "Procedural",
+chamber: "senate",
+chamber_label: "Senate",
+congress: 113,
+created: "2014-12-13T13:14:00",
+id: 116067,
+link: "https://www.govtrack.us/congress/votes/113-2014/s330",
+missing_data: false,
+number: 330,
+options: [
+{
+id: 444785,
+key: "+",
+value: "Yea",
+vote: 116067
+},
+{
+id: 444786,
+key: "-",
+value: "Nay",
+vote: 116067
+},
+{
+id: 444787,
+key: "P",
+value: "Present",
+vote: 116067
+},
+{
+id: 444788,
+key: "0",
+value: "Not Voting",
+vote: 116067
+}
+],
+question: "Motion to Proceed on H.R. 83: To require the Secretary of the Interior to assemble a team of technical, policy, and financial experts to ...",
+question_details: null,
+related_amendment: null,
+related_bill: {
+bill_resolution_type: "bill",
+bill_type: "house_bill",
+bill_type_label: "H.R.",
+congress: 113,
+current_status: "enacted_signed",
+current_status_date: "2014-12-16",
+current_status_description: "This bill was enacted after being signed by the President on December 16, 2014.",
+current_status_label: "Enacted — Signed by the President",
+display_number: "H.R. 83",
+docs_house_gov_postdate: "2014-12-09T19:23:59",
+id: 256160,
+introduced_date: "2013-01-03",
+is_alive: false,
+is_current: true,
+link: "https://www.govtrack.us/congress/bills/113/hr83",
+major_actions: [
+[
+"datetime.datetime(2013, 1, 3, 0, 0)",
+2,
+"Referred to the House Committee on Energy and Commerce.",
+"<action datetime="2013-01-03" state="REFERRED"> <text>Referred to the House Committee on Energy and Commerce.</text> </action> "
+],
+[
+"datetime.datetime(2013, 7, 17, 0, 0)",
+3,
+"Ordered to be Reported by Unanimous Consent.",
+"<calendar datetime="2013-07-17" state="REPORTED"> <text>Ordered to be Reported by Unanimous Consent.</text> </calendar> "
+],
+[
+"datetime.datetime(2014, 9, 15, 16, 25)",
+4,
+"On motion to suspend the rules and pass the bill, as amended Agreed to by voice vote.",
+"<vote how="by voice vote" type="vote" datetime="2014-09-15T16:25:00-04:00" where="h" result="pass" state="PASS_OVER:HOUSE"> <text>On motion to suspend the rules and pass the bill, as amended Agreed to by voice vote.</text> <reference ref="CR H7462" label="text"/> </vote> "
+],
+[
+"datetime.datetime(2014, 9, 18, 0, 0)",
+11,
+"Passed Senate with an amendment by Unanimous Consent.",
+"<vote how="by Unanimous Consent" type="vote2" datetime="2014-09-18" where="s" result="pass" state="PASS_BACK:SENATE"> <text>Passed Senate with an amendment by Unanimous Consent.</text> </vote> "
+],
+[
+"datetime.datetime(2014, 12, 11, 21, 38)",
+10,
+"On motion that the House agree with an amendment to the Senate amendment Agreed to by the Yeas and Nays: 219 - 206 (Roll No. 563).",
+"<vote how="roll" type="pingpong" roll="563" datetime="2014-12-11T21:38:00-05:00" where="h" result="pass" state="PASS_BACK:HOUSE"> <text>On motion that the House agree with an amendment to the Senate amendment Agreed to by the Yeas and Nays: 219 - 206 (Roll No. 563).</text> <reference ref="CR H9076-9273" label="text as House agreed to Senate amendment with an amendment"/> </vote> "
+],
+[
+"datetime.datetime(2014, 12, 13, 0, 0)",
+9,
+"Senate agreed to the House amendment to the Senate amendment to H.R. 83 by Yea-Nay Vote. 56 - 40. Record Vote Number: 354.",
+"<vote how="roll" type="pingpong" roll="354" datetime="2014-12-13" where="s" result="pass" state="PASSED:BILL"> <text>Senate agreed to the House amendment to the Senate amendment to H.R. 83 by Yea-Nay Vote. 56 - 40. Record Vote Number: 354.</text> <reference ref="CR S6813-6814" label="consideration"/> </vote> "
+],
+[
+"datetime.datetime(2014, 12, 16, 0, 0)",
+28,
+"Signed by President.",
+"<signed datetime="2014-12-16" state="ENACTED:SIGNED"> <text>Signed by President.</text> </signed> "
+]
+],
+noun: "bill",
+number: 83,
+senate_floor_schedule_postdate: null,
+sliplawnum: null,
+sliplawpubpriv: null,
+source: "thomas-congproj",
+source_link: null,
+sponsor: 400073,
+sponsor_role: 42711,
+thomas_link: "http://thomas.loc.gov/cgi-bin/bdquery/z?d113:hr83:",
+title: "H.R. 83: To require the Secretary of the Interior to assemble a team of technical, policy, and financial experts to address the energy needs of the insular areas of the United States and the Freely Associated States through the development of energy actio",
+title_without_number: "To require the Secretary of the Interior to assemble a team of technical, policy, and financial experts to address the energy needs of the insular areas of the United States and the Freely Associated States through the development of energy action plans aimed at promoting access to affordable, reliable energy, including increasing use of indigenous clean-energy resources, and for other purposes.",
+titles: [
+[
+"official",
+"introduced",
+"To require the Secretary of the Interior to assemble a team of technical, policy, and financial experts to address the energy needs of the insular areas of the United States and the Freely Associated States through the development of action plans aimed at reducing reliance on imported fossil fuels and increasing use of indigenous clean-energy resources, and for other purposes."
+],
+[
+"official",
+"amended by house",
+"To require the Secretary of the Interior to assemble a team of technical, policy, and financial experts to address the energy needs of the insular areas of the United States and the Freely Associated States through the development of energy action plans aimed at promoting access to affordable, reliable energy, including increasing use of indigenous clean-energy resources, and for other purposes."
+]
+]
+},
+required: "1/2",
+result: "Motion to Proceed Agreed to",
+session: "2014",
+source: "senate",
+source_label: "senate.gov",
+total_minus: 41,
+total_other: 8,
+total_plus: 51,
+vote_type: "On the Motion to Proceed"
+},
+{
+category: "procedural",
+category_label: "Procedural",
+chamber: "senate",
+chamber_label: "Senate",
+congress: 113,
+created: "2014-12-13T13:53:00",
+id: 116069,
+link: "https://www.govtrack.us/congress/votes/113-2014/s332",
+missing_data: false,
+number: 332,
+options: [
+{
+id: 444793,
+key: "+",
+value: "Yea",
+vote: 116069
+},
+{
+id: 444794,
+key: "-",
+value: "Nay",
+vote: 116069
+},
+{
+id: 444795,
+key: "P",
+value: "Present",
+vote: 116069
+},
+{
+id: 444796,
+key: "0",
+value: "Not Voting",
+vote: 116069
+}
+],
+question: "Motion to Proceed on H.R. 83: To require the Secretary of the Interior to assemble a team of technical, policy, and financial experts to ...",
+question_details: null,
+related_amendment: null,
+related_bill: {
+bill_resolution_type: "bill",
+bill_type: "house_bill",
+bill_type_label: "H.R.",
+congress: 113,
+current_status: "enacted_signed",
+current_status_date: "2014-12-16",
+current_status_description: "This bill was enacted after being signed by the President on December 16, 2014.",
+current_status_label: "Enacted — Signed by the President",
+display_number: "H.R. 83",
+docs_house_gov_postdate: "2014-12-09T19:23:59",
+id: 256160,
+introduced_date: "2013-01-03",
+is_alive: false,
+is_current: true,
+link: "https://www.govtrack.us/congress/bills/113/hr83",
+major_actions: [
+[
+"datetime.datetime(2013, 1, 3, 0, 0)",
+2,
+"Referred to the House Committee on Energy and Commerce.",
+"<action datetime="2013-01-03" state="REFERRED"> <text>Referred to the House Committee on Energy and Commerce.</text> </action> "
+],
+[
+"datetime.datetime(2013, 7, 17, 0, 0)",
+3,
+"Ordered to be Reported by Unanimous Consent.",
+"<calendar datetime="2013-07-17" state="REPORTED"> <text>Ordered to be Reported by Unanimous Consent.</text> </calendar> "
+],
+[
+"datetime.datetime(2014, 9, 15, 16, 25)",
+4,
+"On motion to suspend the rules and pass the bill, as amended Agreed to by voice vote.",
+"<vote how="by voice vote" type="vote" datetime="2014-09-15T16:25:00-04:00" where="h" result="pass" state="PASS_OVER:HOUSE"> <text>On motion to suspend the rules and pass the bill, as amended Agreed to by voice vote.</text> <reference ref="CR H7462" label="text"/> </vote> "
+],
+[
+"datetime.datetime(2014, 9, 18, 0, 0)",
+11,
+"Passed Senate with an amendment by Unanimous Consent.",
+"<vote how="by Unanimous Consent" type="vote2" datetime="2014-09-18" where="s" result="pass" state="PASS_BACK:SENATE"> <text>Passed Senate with an amendment by Unanimous Consent.</text> </vote> "
+],
+[
+"datetime.datetime(2014, 12, 11, 21, 38)",
+10,
+"On motion that the House agree with an amendment to the Senate amendment Agreed to by the Yeas and Nays: 219 - 206 (Roll No. 563).",
+"<vote how="roll" type="pingpong" roll="563" datetime="2014-12-11T21:38:00-05:00" where="h" result="pass" state="PASS_BACK:HOUSE"> <text>On motion that the House agree with an amendment to the Senate amendment Agreed to by the Yeas and Nays: 219 - 206 (Roll No. 563).</text> <reference ref="CR H9076-9273" label="text as House agreed to Senate amendment with an amendment"/> </vote> "
+],
+[
+"datetime.datetime(2014, 12, 13, 0, 0)",
+9,
+"Senate agreed to the House amendment to the Senate amendment to H.R. 83 by Yea-Nay Vote. 56 - 40. Record Vote Number: 354.",
+"<vote how="roll" type="pingpong" roll="354" datetime="2014-12-13" where="s" result="pass" state="PASSED:BILL"> <text>Senate agreed to the House amendment to the Senate amendment to H.R. 83 by Yea-Nay Vote. 56 - 40. Record Vote Number: 354.</text> <reference ref="CR S6813-6814" label="consideration"/> </vote> "
+],
+[
+"datetime.datetime(2014, 12, 16, 0, 0)",
+28,
+"Signed by President.",
+"<signed datetime="2014-12-16" state="ENACTED:SIGNED"> <text>Signed by President.</text> </signed> "
+]
+],
+noun: "bill",
+number: 83,
+senate_floor_schedule_postdate: null,
+sliplawnum: null,
+sliplawpubpriv: null,
+source: "thomas-congproj",
+source_link: null,
+sponsor: 400073,
+sponsor_role: 42711,
+thomas_link: "http://thomas.loc.gov/cgi-bin/bdquery/z?d113:hr83:",
+title: "H.R. 83: To require the Secretary of the Interior to assemble a team of technical, policy, and financial experts to address the energy needs of the insular areas of the United States and the Freely Associated States through the development of energy actio",
+title_without_number: "To require the Secretary of the Interior to assemble a team of technical, policy, and financial experts to address the energy needs of the insular areas of the United States and the Freely Associated States through the development of energy action plans aimed at promoting access to affordable, reliable energy, including increasing use of indigenous clean-energy resources, and for other purposes.",
+titles: [
+[
+"official",
+"introduced",
+"To require the Secretary of the Interior to assemble a team of technical, policy, and financial experts to address the energy needs of the insular areas of the United States and the Freely Associated States through the development of action plans aimed at reducing reliance on imported fossil fuels and increasing use of indigenous clean-energy resources, and for other purposes."
+],
+[
+"official",
+"amended by house",
+"To require the Secretary of the Interior to assemble a team of technical, policy, and financial experts to address the energy needs of the insular areas of the United States and the Freely Associated States through the development of energy action plans aimed at promoting access to affordable, reliable energy, including increasing use of indigenous clean-energy resources, and for other purposes."
+]
+]
+},
+required: "1/2",
+result: "Motion to Proceed Agreed to",
+session: "2014",
+source: "senate",
+source_label: "senate.gov",
+total_minus: 41,
+total_other: 7,
+total_plus: 52,
+vote_type: "On the Motion to Proceed"
+},
+{
+category: "procedural",
+category_label: "Procedural",
+chamber: "senate",
+chamber_label: "Senate",
+congress: 113,
+created: "2014-12-13T14:27:00",
+id: 116064,
+link: "https://www.govtrack.us/congress/votes/113-2014/s334",
+missing_data: false,
+number: 334,
+options: [
+{
+id: 444773,
+key: "+",
+value: "Yea",
+vote: 116064
+},
+{
+id: 444774,
+key: "-",
+value: "Nay",
+vote: 116064
+},
+{
+id: 444775,
+key: "P",
+value: "Present",
+vote: 116064
+},
+{
+id: 444776,
+key: "0",
+value: "Not Voting",
+vote: 116064
+}
+],
+question: "Motion to Proceed on H.R. 83: To require the Secretary of the Interior to assemble a team of technical, policy, and financial experts to ...",
+question_details: null,
+related_amendment: null,
+related_bill: {
+bill_resolution_type: "bill",
+bill_type: "house_bill",
+bill_type_label: "H.R.",
+congress: 113,
+current_status: "enacted_signed",
+current_status_date: "2014-12-16",
+current_status_description: "This bill was enacted after being signed by the President on December 16, 2014.",
+current_status_label: "Enacted — Signed by the President",
+display_number: "H.R. 83",
+docs_house_gov_postdate: "2014-12-09T19:23:59",
+id: 256160,
+introduced_date: "2013-01-03",
+is_alive: false,
+is_current: true,
+link: "https://www.govtrack.us/congress/bills/113/hr83",
+major_actions: [
+[
+"datetime.datetime(2013, 1, 3, 0, 0)",
+2,
+"Referred to the House Committee on Energy and Commerce.",
+"<action datetime="2013-01-03" state="REFERRED"> <text>Referred to the House Committee on Energy and Commerce.</text> </action> "
+],
+[
+"datetime.datetime(2013, 7, 17, 0, 0)",
+3,
+"Ordered to be Reported by Unanimous Consent.",
+"<calendar datetime="2013-07-17" state="REPORTED"> <text>Ordered to be Reported by Unanimous Consent.</text> </calendar> "
+],
+[
+"datetime.datetime(2014, 9, 15, 16, 25)",
+4,
+"On motion to suspend the rules and pass the bill, as amended Agreed to by voice vote.",
+"<vote how="by voice vote" type="vote" datetime="2014-09-15T16:25:00-04:00" where="h" result="pass" state="PASS_OVER:HOUSE"> <text>On motion to suspend the rules and pass the bill, as amended Agreed to by voice vote.</text> <reference ref="CR H7462" label="text"/> </vote> "
+],
+[
+"datetime.datetime(2014, 9, 18, 0, 0)",
+11,
+"Passed Senate with an amendment by Unanimous Consent.",
+"<vote how="by Unanimous Consent" type="vote2" datetime="2014-09-18" where="s" result="pass" state="PASS_BACK:SENATE"> <text>Passed Senate with an amendment by Unanimous Consent.</text> </vote> "
+],
+[
+"datetime.datetime(2014, 12, 11, 21, 38)",
+10,
+"On motion that the House agree with an amendment to the Senate amendment Agreed to by the Yeas and Nays: 219 - 206 (Roll No. 563).",
+"<vote how="roll" type="pingpong" roll="563" datetime="2014-12-11T21:38:00-05:00" where="h" result="pass" state="PASS_BACK:HOUSE"> <text>On motion that the House agree with an amendment to the Senate amendment Agreed to by the Yeas and Nays: 219 - 206 (Roll No. 563).</text> <reference ref="CR H9076-9273" label="text as House agreed to Senate amendment with an amendment"/> </vote> "
+],
+[
+"datetime.datetime(2014, 12, 13, 0, 0)",
+9,
+"Senate agreed to the House amendment to the Senate amendment to H.R. 83 by Yea-Nay Vote. 56 - 40. Record Vote Number: 354.",
+"<vote how="roll" type="pingpong" roll="354" datetime="2014-12-13" where="s" result="pass" state="PASSED:BILL"> <text>Senate agreed to the House amendment to the Senate amendment to H.R. 83 by Yea-Nay Vote. 56 - 40. Record Vote Number: 354.</text> <reference ref="CR S6813-6814" label="consideration"/> </vote> "
+],
+[
+"datetime.datetime(2014, 12, 16, 0, 0)",
+28,
+"Signed by President.",
+"<signed datetime="2014-12-16" state="ENACTED:SIGNED"> <text>Signed by President.</text> </signed> "
+]
+],
+noun: "bill",
+number: 83,
+senate_floor_schedule_postdate: null,
+sliplawnum: null,
+sliplawpubpriv: null,
+source: "thomas-congproj",
+source_link: null,
+sponsor: 400073,
+sponsor_role: 42711,
+thomas_link: "http://thomas.loc.gov/cgi-bin/bdquery/z?d113:hr83:",
+title: "H.R. 83: To require the Secretary of the Interior to assemble a team of technical, policy, and financial experts to address the energy needs of the insular areas of the United States and the Freely Associated States through the development of energy actio",
+title_without_number: "To require the Secretary of the Interior to assemble a team of technical, policy, and financial experts to address the energy needs of the insular areas of the United States and the Freely Associated States through the development of energy action plans aimed at promoting access to affordable, reliable energy, including increasing use of indigenous clean-energy resources, and for other purposes.",
+titles: [
+[
+"official",
+"introduced",
+"To require the Secretary of the Interior to assemble a team of technical, policy, and financial experts to address the energy needs of the insular areas of the United States and the Freely Associated States through the development of action plans aimed at reducing reliance on imported fossil fuels and increasing use of indigenous clean-energy resources, and for other purposes."
+],
+[
+"official",
+"amended by house",
+"To require the Secretary of the Interior to assemble a team of technical, policy, and financial experts to address the energy needs of the insular areas of the United States and the Freely Associated States through the development of energy action plans aimed at promoting access to affordable, reliable energy, including increasing use of indigenous clean-energy resources, and for other purposes."
+]
+]
+},
+required: "1/2",
+result: "Motion to Proceed Agreed to",
+session: "2014",
+source: "senate",
+source_label: "senate.gov",
+total_minus: 41,
+total_other: 7,
+total_plus: 52,
+vote_type: "On the Motion to Proceed"
+},
+{
+category: "procedural",
+category_label: "Procedural",
+chamber: "senate",
+chamber_label: "Senate",
+congress: 113,
+created: "2014-12-13T15:12:00",
+id: 116075,
+link: "https://www.govtrack.us/congress/votes/113-2014/s336",
+missing_data: false,
+number: 336,
+options: [
+{
+id: 444817,
+key: "+",
+value: "Yea",
+vote: 116075
+},
+{
+id: 444818,
+key: "-",
+value: "Nay",
+vote: 116075
+},
+{
+id: 444819,
+key: "P",
+value: "Present",
+vote: 116075
+},
+{
+id: 444820,
+key: "0",
+value: "Not Voting",
+vote: 116075
+}
+],
+question: "Motion to Proceed on H.R. 83: To require the Secretary of the Interior to assemble a team of technical, policy, and financial experts to ...",
+question_details: null,
+related_amendment: null,
+related_bill: {
+bill_resolution_type: "bill",
+bill_type: "house_bill",
+bill_type_label: "H.R.",
+congress: 113,
+current_status: "enacted_signed",
+current_status_date: "2014-12-16",
+current_status_description: "This bill was enacted after being signed by the President on December 16, 2014.",
+current_status_label: "Enacted — Signed by the President",
+display_number: "H.R. 83",
+docs_house_gov_postdate: "2014-12-09T19:23:59",
+id: 256160,
+introduced_date: "2013-01-03",
+is_alive: false,
+is_current: true,
+link: "https://www.govtrack.us/congress/bills/113/hr83",
+major_actions: [
+[
+"datetime.datetime(2013, 1, 3, 0, 0)",
+2,
+"Referred to the House Committee on Energy and Commerce.",
+"<action datetime="2013-01-03" state="REFERRED"> <text>Referred to the House Committee on Energy and Commerce.</text> </action> "
+],
+[
+"datetime.datetime(2013, 7, 17, 0, 0)",
+3,
+"Ordered to be Reported by Unanimous Consent.",
+"<calendar datetime="2013-07-17" state="REPORTED"> <text>Ordered to be Reported by Unanimous Consent.</text> </calendar> "
+],
+[
+"datetime.datetime(2014, 9, 15, 16, 25)",
+4,
+"On motion to suspend the rules and pass the bill, as amended Agreed to by voice vote.",
+"<vote how="by voice vote" type="vote" datetime="2014-09-15T16:25:00-04:00" where="h" result="pass" state="PASS_OVER:HOUSE"> <text>On motion to suspend the rules and pass the bill, as amended Agreed to by voice vote.</text> <reference ref="CR H7462" label="text"/> </vote> "
+],
+[
+"datetime.datetime(2014, 9, 18, 0, 0)",
+11,
+"Passed Senate with an amendment by Unanimous Consent.",
+"<vote how="by Unanimous Consent" type="vote2" datetime="2014-09-18" where="s" result="pass" state="PASS_BACK:SENATE"> <text>Passed Senate with an amendment by Unanimous Consent.</text> </vote> "
+],
+[
+"datetime.datetime(2014, 12, 11, 21, 38)",
+10,
+"On motion that the House agree with an amendment to the Senate amendment Agreed to by the Yeas and Nays: 219 - 206 (Roll No. 563).",
+"<vote how="roll" type="pingpong" roll="563" datetime="2014-12-11T21:38:00-05:00" where="h" result="pass" state="PASS_BACK:HOUSE"> <text>On motion that the House agree with an amendment to the Senate amendment Agreed to by the Yeas and Nays: 219 - 206 (Roll No. 563).</text> <reference ref="CR H9076-9273" label="text as House agreed to Senate amendment with an amendment"/> </vote> "
+],
+[
+"datetime.datetime(2014, 12, 13, 0, 0)",
+9,
+"Senate agreed to the House amendment to the Senate amendment to H.R. 83 by Yea-Nay Vote. 56 - 40. Record Vote Number: 354.",
+"<vote how="roll" type="pingpong" roll="354" datetime="2014-12-13" where="s" result="pass" state="PASSED:BILL"> <text>Senate agreed to the House amendment to the Senate amendment to H.R. 83 by Yea-Nay Vote. 56 - 40. Record Vote Number: 354.</text> <reference ref="CR S6813-6814" label="consideration"/> </vote> "
+],
+[
+"datetime.datetime(2014, 12, 16, 0, 0)",
+28,
+"Signed by President.",
+"<signed datetime="2014-12-16" state="ENACTED:SIGNED"> <text>Signed by President.</text> </signed> "
+]
+],
+noun: "bill",
+number: 83,
+senate_floor_schedule_postdate: null,
+sliplawnum: null,
+sliplawpubpriv: null,
+source: "thomas-congproj",
+source_link: null,
+sponsor: 400073,
+sponsor_role: 42711,
+thomas_link: "http://thomas.loc.gov/cgi-bin/bdquery/z?d113:hr83:",
+title: "H.R. 83: To require the Secretary of the Interior to assemble a team of technical, policy, and financial experts to address the energy needs of the insular areas of the United States and the Freely Associated States through the development of energy actio",
+title_without_number: "To require the Secretary of the Interior to assemble a team of technical, policy, and financial experts to address the energy needs of the insular areas of the United States and the Freely Associated States through the development of energy action plans aimed at promoting access to affordable, reliable energy, including increasing use of indigenous clean-energy resources, and for other purposes.",
+titles: [
+[
+"official",
+"introduced",
+"To require the Secretary of the Interior to assemble a team of technical, policy, and financial experts to address the energy needs of the insular areas of the United States and the Freely Associated States through the development of action plans aimed at reducing reliance on imported fossil fuels and increasing use of indigenous clean-energy resources, and for other purposes."
+],
+[
+"official",
+"amended by house",
+"To require the Secretary of the Interior to assemble a team of technical, policy, and financial experts to address the energy needs of the insular areas of the United States and the Freely Associated States through the development of energy action plans aimed at promoting access to affordable, reliable energy, including increasing use of indigenous clean-energy resources, and for other purposes."
+]
+]
+},
+required: "1/2",
+result: "Motion to Proceed Agreed to",
+session: "2014",
+source: "senate",
+source_label: "senate.gov",
+total_minus: 41,
+total_other: 7,
+total_plus: 52,
+vote_type: "On the Motion to Proceed"
+},
+{
+category: "procedural",
+category_label: "Procedural",
+chamber: "senate",
+chamber_label: "Senate",
+congress: 113,
+created: "2014-12-13T16:06:00",
+id: 116077,
+link: "https://www.govtrack.us/congress/votes/113-2014/s338",
+missing_data: false,
+number: 338,
+options: [
+{
+id: 444825,
+key: "+",
+value: "Yea",
+vote: 116077
+},
+{
+id: 444826,
+key: "-",
+value: "Nay",
+vote: 116077
+},
+{
+id: 444827,
+key: "P",
+value: "Present",
+vote: 116077
+},
+{
+id: 444828,
+key: "0",
+value: "Not Voting",
+vote: 116077
+}
+],
+question: "Motion to Proceed on H.R. 83: To require the Secretary of the Interior to assemble a team of technical, policy, and financial experts to ...",
+question_details: null,
+related_amendment: null,
+related_bill: {
+bill_resolution_type: "bill",
+bill_type: "house_bill",
+bill_type_label: "H.R.",
+congress: 113,
+current_status: "enacted_signed",
+current_status_date: "2014-12-16",
+current_status_description: "This bill was enacted after being signed by the President on December 16, 2014.",
+current_status_label: "Enacted — Signed by the President",
+display_number: "H.R. 83",
+docs_house_gov_postdate: "2014-12-09T19:23:59",
+id: 256160,
+introduced_date: "2013-01-03",
+is_alive: false,
+is_current: true,
+link: "https://www.govtrack.us/congress/bills/113/hr83",
+major_actions: [
+[
+"datetime.datetime(2013, 1, 3, 0, 0)",
+2,
+"Referred to the House Committee on Energy and Commerce.",
+"<action datetime="2013-01-03" state="REFERRED"> <text>Referred to the House Committee on Energy and Commerce.</text> </action> "
+],
+[
+"datetime.datetime(2013, 7, 17, 0, 0)",
+3,
+"Ordered to be Reported by Unanimous Consent.",
+"<calendar datetime="2013-07-17" state="REPORTED"> <text>Ordered to be Reported by Unanimous Consent.</text> </calendar> "
+],
+[
+"datetime.datetime(2014, 9, 15, 16, 25)",
+4,
+"On motion to suspend the rules and pass the bill, as amended Agreed to by voice vote.",
+"<vote how="by voice vote" type="vote" datetime="2014-09-15T16:25:00-04:00" where="h" result="pass" state="PASS_OVER:HOUSE"> <text>On motion to suspend the rules and pass the bill, as amended Agreed to by voice vote.</text> <reference ref="CR H7462" label="text"/> </vote> "
+],
+[
+"datetime.datetime(2014, 9, 18, 0, 0)",
+11,
+"Passed Senate with an amendment by Unanimous Consent.",
+"<vote how="by Unanimous Consent" type="vote2" datetime="2014-09-18" where="s" result="pass" state="PASS_BACK:SENATE"> <text>Passed Senate with an amendment by Unanimous Consent.</text> </vote> "
+],
+[
+"datetime.datetime(2014, 12, 11, 21, 38)",
+10,
+"On motion that the House agree with an amendment to the Senate amendment Agreed to by the Yeas and Nays: 219 - 206 (Roll No. 563).",
+"<vote how="roll" type="pingpong" roll="563" datetime="2014-12-11T21:38:00-05:00" where="h" result="pass" state="PASS_BACK:HOUSE"> <text>On motion that the House agree with an amendment to the Senate amendment Agreed to by the Yeas and Nays: 219 - 206 (Roll No. 563).</text> <reference ref="CR H9076-9273" label="text as House agreed to Senate amendment with an amendment"/> </vote> "
+],
+[
+"datetime.datetime(2014, 12, 13, 0, 0)",
+9,
+"Senate agreed to the House amendment to the Senate amendment to H.R. 83 by Yea-Nay Vote. 56 - 40. Record Vote Number: 354.",
+"<vote how="roll" type="pingpong" roll="354" datetime="2014-12-13" where="s" result="pass" state="PASSED:BILL"> <text>Senate agreed to the House amendment to the Senate amendment to H.R. 83 by Yea-Nay Vote. 56 - 40. Record Vote Number: 354.</text> <reference ref="CR S6813-6814" label="consideration"/> </vote> "
+],
+[
+"datetime.datetime(2014, 12, 16, 0, 0)",
+28,
+"Signed by President.",
+"<signed datetime="2014-12-16" state="ENACTED:SIGNED"> <text>Signed by President.</text> </signed> "
+]
+],
+noun: "bill",
+number: 83,
+senate_floor_schedule_postdate: null,
+sliplawnum: null,
+sliplawpubpriv: null,
+source: "thomas-congproj",
+source_link: null,
+sponsor: 400073,
+sponsor_role: 42711,
+thomas_link: "http://thomas.loc.gov/cgi-bin/bdquery/z?d113:hr83:",
+title: "H.R. 83: To require the Secretary of the Interior to assemble a team of technical, policy, and financial experts to address the energy needs of the insular areas of the United States and the Freely Associated States through the development of energy actio",
+title_without_number: "To require the Secretary of the Interior to assemble a team of technical, policy, and financial experts to address the energy needs of the insular areas of the United States and the Freely Associated States through the development of energy action plans aimed at promoting access to affordable, reliable energy, including increasing use of indigenous clean-energy resources, and for other purposes.",
+titles: [
+[
+"official",
+"introduced",
+"To require the Secretary of the Interior to assemble a team of technical, policy, and financial experts to address the energy needs of the insular areas of the United States and the Freely Associated States through the development of action plans aimed at reducing reliance on imported fossil fuels and increasing use of indigenous clean-energy resources, and for other purposes."
+],
+[
+"official",
+"amended by house",
+"To require the Secretary of the Interior to assemble a team of technical, policy, and financial experts to address the energy needs of the insular areas of the United States and the Freely Associated States through the development of energy action plans aimed at promoting access to affordable, reliable energy, including increasing use of indigenous clean-energy resources, and for other purposes."
+]
+]
+},
+required: "1/2",
+result: "Motion to Proceed Agreed to",
+session: "2014",
+source: "senate",
+source_label: "senate.gov",
+total_minus: 40,
+total_other: 7,
+total_plus: 53,
+vote_type: "On the Motion to Proceed"
+},
+{
+category: "procedural",
+category_label: "Procedural",
+chamber: "senate",
+chamber_label: "Senate",
+congress: 113,
+created: "2014-12-13T16:43:00",
+id: 116073,
+link: "https://www.govtrack.us/congress/votes/113-2014/s340",
+missing_data: false,
+number: 340,
+options: [
+{
+id: 444809,
+key: "+",
+value: "Yea",
+vote: 116073
+},
+{
+id: 444810,
+key: "-",
+value: "Nay",
+vote: 116073
+},
+{
+id: 444811,
+key: "P",
+value: "Present",
+vote: 116073
+},
+{
+id: 444812,
+key: "0",
+value: "Not Voting",
+vote: 116073
+}
+],
+question: "Motion to Proceed on H.R. 83: To require the Secretary of the Interior to assemble a team of technical, policy, and financial experts to ...",
+question_details: null,
+related_amendment: null,
+related_bill: {
+bill_resolution_type: "bill",
+bill_type: "house_bill",
+bill_type_label: "H.R.",
+congress: 113,
+current_status: "enacted_signed",
+current_status_date: "2014-12-16",
+current_status_description: "This bill was enacted after being signed by the President on December 16, 2014.",
+current_status_label: "Enacted — Signed by the President",
+display_number: "H.R. 83",
+docs_house_gov_postdate: "2014-12-09T19:23:59",
+id: 256160,
+introduced_date: "2013-01-03",
+is_alive: false,
+is_current: true,
+link: "https://www.govtrack.us/congress/bills/113/hr83",
+major_actions: [
+[
+"datetime.datetime(2013, 1, 3, 0, 0)",
+2,
+"Referred to the House Committee on Energy and Commerce.",
+"<action datetime="2013-01-03" state="REFERRED"> <text>Referred to the House Committee on Energy and Commerce.</text> </action> "
+],
+[
+"datetime.datetime(2013, 7, 17, 0, 0)",
+3,
+"Ordered to be Reported by Unanimous Consent.",
+"<calendar datetime="2013-07-17" state="REPORTED"> <text>Ordered to be Reported by Unanimous Consent.</text> </calendar> "
+],
+[
+"datetime.datetime(2014, 9, 15, 16, 25)",
+4,
+"On motion to suspend the rules and pass the bill, as amended Agreed to by voice vote.",
+"<vote how="by voice vote" type="vote" datetime="2014-09-15T16:25:00-04:00" where="h" result="pass" state="PASS_OVER:HOUSE"> <text>On motion to suspend the rules and pass the bill, as amended Agreed to by voice vote.</text> <reference ref="CR H7462" label="text"/> </vote> "
+],
+[
+"datetime.datetime(2014, 9, 18, 0, 0)",
+11,
+"Passed Senate with an amendment by Unanimous Consent.",
+"<vote how="by Unanimous Consent" type="vote2" datetime="2014-09-18" where="s" result="pass" state="PASS_BACK:SENATE"> <text>Passed Senate with an amendment by Unanimous Consent.</text> </vote> "
+],
+[
+"datetime.datetime(2014, 12, 11, 21, 38)",
+10,
+"On motion that the House agree with an amendment to the Senate amendment Agreed to by the Yeas and Nays: 219 - 206 (Roll No. 563).",
+"<vote how="roll" type="pingpong" roll="563" datetime="2014-12-11T21:38:00-05:00" where="h" result="pass" state="PASS_BACK:HOUSE"> <text>On motion that the House agree with an amendment to the Senate amendment Agreed to by the Yeas and Nays: 219 - 206 (Roll No. 563).</text> <reference ref="CR H9076-9273" label="text as House agreed to Senate amendment with an amendment"/> </vote> "
+],
+[
+"datetime.datetime(2014, 12, 13, 0, 0)",
+9,
+"Senate agreed to the House amendment to the Senate amendment to H.R. 83 by Yea-Nay Vote. 56 - 40. Record Vote Number: 354.",
+"<vote how="roll" type="pingpong" roll="354" datetime="2014-12-13" where="s" result="pass" state="PASSED:BILL"> <text>Senate agreed to the House amendment to the Senate amendment to H.R. 83 by Yea-Nay Vote. 56 - 40. Record Vote Number: 354.</text> <reference ref="CR S6813-6814" label="consideration"/> </vote> "
+],
+[
+"datetime.datetime(2014, 12, 16, 0, 0)",
+28,
+"Signed by President.",
+"<signed datetime="2014-12-16" state="ENACTED:SIGNED"> <text>Signed by President.</text> </signed> "
+]
+],
+noun: "bill",
+number: 83,
+senate_floor_schedule_postdate: null,
+sliplawnum: null,
+sliplawpubpriv: null,
+source: "thomas-congproj",
+source_link: null,
+sponsor: 400073,
+sponsor_role: 42711,
+thomas_link: "http://thomas.loc.gov/cgi-bin/bdquery/z?d113:hr83:",
+title: "H.R. 83: To require the Secretary of the Interior to assemble a team of technical, policy, and financial experts to address the energy needs of the insular areas of the United States and the Freely Associated States through the development of energy actio",
+title_without_number: "To require the Secretary of the Interior to assemble a team of technical, policy, and financial experts to address the energy needs of the insular areas of the United States and the Freely Associated States through the development of energy action plans aimed at promoting access to affordable, reliable energy, including increasing use of indigenous clean-energy resources, and for other purposes.",
+titles: [
+[
+"official",
+"introduced",
+"To require the Secretary of the Interior to assemble a team of technical, policy, and financial experts to address the energy needs of the insular areas of the United States and the Freely Associated States through the development of action plans aimed at reducing reliance on imported fossil fuels and increasing use of indigenous clean-energy resources, and for other purposes."
+],
+[
+"official",
+"amended by house",
+"To require the Secretary of the Interior to assemble a team of technical, policy, and financial experts to address the energy needs of the insular areas of the United States and the Freely Associated States through the development of energy action plans aimed at promoting access to affordable, reliable energy, including increasing use of indigenous clean-energy resources, and for other purposes."
+]
+]
+},
+required: "1/2",
+result: "Motion to Proceed Agreed to",
+session: "2014",
+source: "senate",
+source_label: "senate.gov",
+total_minus: 42,
+total_other: 6,
+total_plus: 52,
+vote_type: "On the Motion to Proceed"
+},
+{
+category: "procedural",
+category_label: "Procedural",
+chamber: "senate",
+chamber_label: "Senate",
+congress: 113,
+created: "2014-12-13T17:19:00",
+id: 116080,
+link: "https://www.govtrack.us/congress/votes/113-2014/s342",
+missing_data: false,
+number: 342,
+options: [
+{
+id: 444837,
+key: "+",
+value: "Yea",
+vote: 116080
+},
+{
+id: 444838,
+key: "-",
+value: "Nay",
+vote: 116080
+},
+{
+id: 444839,
+key: "P",
+value: "Present",
+vote: 116080
+},
+{
+id: 444840,
+key: "0",
+value: "Not Voting",
+vote: 116080
+}
+],
+question: "Motion to Proceed on H.R. 83: To require the Secretary of the Interior to assemble a team of technical, policy, and financial experts to ...",
+question_details: null,
+related_amendment: null,
+related_bill: {
+bill_resolution_type: "bill",
+bill_type: "house_bill",
+bill_type_label: "H.R.",
+congress: 113,
+current_status: "enacted_signed",
+current_status_date: "2014-12-16",
+current_status_description: "This bill was enacted after being signed by the President on December 16, 2014.",
+current_status_label: "Enacted — Signed by the President",
+display_number: "H.R. 83",
+docs_house_gov_postdate: "2014-12-09T19:23:59",
+id: 256160,
+introduced_date: "2013-01-03",
+is_alive: false,
+is_current: true,
+link: "https://www.govtrack.us/congress/bills/113/hr83",
+major_actions: [
+[
+"datetime.datetime(2013, 1, 3, 0, 0)",
+2,
+"Referred to the House Committee on Energy and Commerce.",
+"<action datetime="2013-01-03" state="REFERRED"> <text>Referred to the House Committee on Energy and Commerce.</text> </action> "
+],
+[
+"datetime.datetime(2013, 7, 17, 0, 0)",
+3,
+"Ordered to be Reported by Unanimous Consent.",
+"<calendar datetime="2013-07-17" state="REPORTED"> <text>Ordered to be Reported by Unanimous Consent.</text> </calendar> "
+],
+[
+"datetime.datetime(2014, 9, 15, 16, 25)",
+4,
+"On motion to suspend the rules and pass the bill, as amended Agreed to by voice vote.",
+"<vote how="by voice vote" type="vote" datetime="2014-09-15T16:25:00-04:00" where="h" result="pass" state="PASS_OVER:HOUSE"> <text>On motion to suspend the rules and pass the bill, as amended Agreed to by voice vote.</text> <reference ref="CR H7462" label="text"/> </vote> "
+],
+[
+"datetime.datetime(2014, 9, 18, 0, 0)",
+11,
+"Passed Senate with an amendment by Unanimous Consent.",
+"<vote how="by Unanimous Consent" type="vote2" datetime="2014-09-18" where="s" result="pass" state="PASS_BACK:SENATE"> <text>Passed Senate with an amendment by Unanimous Consent.</text> </vote> "
+],
+[
+"datetime.datetime(2014, 12, 11, 21, 38)",
+10,
+"On motion that the House agree with an amendment to the Senate amendment Agreed to by the Yeas and Nays: 219 - 206 (Roll No. 563).",
+"<vote how="roll" type="pingpong" roll="563" datetime="2014-12-11T21:38:00-05:00" where="h" result="pass" state="PASS_BACK:HOUSE"> <text>On motion that the House agree with an amendment to the Senate amendment Agreed to by the Yeas and Nays: 219 - 206 (Roll No. 563).</text> <reference ref="CR H9076-9273" label="text as House agreed to Senate amendment with an amendment"/> </vote> "
+],
+[
+"datetime.datetime(2014, 12, 13, 0, 0)",
+9,
+"Senate agreed to the House amendment to the Senate amendment to H.R. 83 by Yea-Nay Vote. 56 - 40. Record Vote Number: 354.",
+"<vote how="roll" type="pingpong" roll="354" datetime="2014-12-13" where="s" result="pass" state="PASSED:BILL"> <text>Senate agreed to the House amendment to the Senate amendment to H.R. 83 by Yea-Nay Vote. 56 - 40. Record Vote Number: 354.</text> <reference ref="CR S6813-6814" label="consideration"/> </vote> "
+],
+[
+"datetime.datetime(2014, 12, 16, 0, 0)",
+28,
+"Signed by President.",
+"<signed datetime="2014-12-16" state="ENACTED:SIGNED"> <text>Signed by President.</text> </signed> "
+]
+],
+noun: "bill",
+number: 83,
+senate_floor_schedule_postdate: null,
+sliplawnum: null,
+sliplawpubpriv: null,
+source: "thomas-congproj",
+source_link: null,
+sponsor: 400073,
+sponsor_role: 42711,
+thomas_link: "http://thomas.loc.gov/cgi-bin/bdquery/z?d113:hr83:",
+title: "H.R. 83: To require the Secretary of the Interior to assemble a team of technical, policy, and financial experts to address the energy needs of the insular areas of the United States and the Freely Associated States through the development of energy actio",
+title_without_number: "To require the Secretary of the Interior to assemble a team of technical, policy, and financial experts to address the energy needs of the insular areas of the United States and the Freely Associated States through the development of energy action plans aimed at promoting access to affordable, reliable energy, including increasing use of indigenous clean-energy resources, and for other purposes.",
+titles: [
+[
+"official",
+"introduced",
+"To require the Secretary of the Interior to assemble a team of technical, policy, and financial experts to address the energy needs of the insular areas of the United States and the Freely Associated States through the development of action plans aimed at reducing reliance on imported fossil fuels and increasing use of indigenous clean-energy resources, and for other purposes."
+],
+[
+"official",
+"amended by house",
+"To require the Secretary of the Interior to assemble a team of technical, policy, and financial experts to address the energy needs of the insular areas of the United States and the Freely Associated States through the development of energy action plans aimed at promoting access to affordable, reliable energy, including increasing use of indigenous clean-energy resources, and for other purposes."
+]
+]
+},
+required: "1/2",
+result: "Motion to Proceed Agreed to",
+session: "2014",
+source: "senate",
+source_label: "senate.gov",
+total_minus: 42,
+total_other: 4,
+total_plus: 54,
+vote_type: "On the Motion to Proceed"
+},
+{
+category: "procedural",
+category_label: "Procedural",
+chamber: "senate",
+chamber_label: "Senate",
+congress: 113,
+created: "2014-12-13T17:57:00",
+id: 116086,
+link: "https://www.govtrack.us/congress/votes/113-2014/s344",
+missing_data: false,
+number: 344,
+options: [
+{
+id: 444861,
+key: "+",
+value: "Yea",
+vote: 116086
+},
+{
+id: 444862,
+key: "-",
+value: "Nay",
+vote: 116086
+},
+{
+id: 444863,
+key: "P",
+value: "Present",
+vote: 116086
+},
+{
+id: 444864,
+key: "0",
+value: "Not Voting",
+vote: 116086
+}
+],
+question: "Motion to Proceed on H.R. 83: To require the Secretary of the Interior to assemble a team of technical, policy, and financial experts to ...",
+question_details: null,
+related_amendment: null,
+related_bill: {
+bill_resolution_type: "bill",
+bill_type: "house_bill",
+bill_type_label: "H.R.",
+congress: 113,
+current_status: "enacted_signed",
+current_status_date: "2014-12-16",
+current_status_description: "This bill was enacted after being signed by the President on December 16, 2014.",
+current_status_label: "Enacted — Signed by the President",
+display_number: "H.R. 83",
+docs_house_gov_postdate: "2014-12-09T19:23:59",
+id: 256160,
+introduced_date: "2013-01-03",
+is_alive: false,
+is_current: true,
+link: "https://www.govtrack.us/congress/bills/113/hr83",
+major_actions: [
+[
+"datetime.datetime(2013, 1, 3, 0, 0)",
+2,
+"Referred to the House Committee on Energy and Commerce.",
+"<action datetime="2013-01-03" state="REFERRED"> <text>Referred to the House Committee on Energy and Commerce.</text> </action> "
+],
+[
+"datetime.datetime(2013, 7, 17, 0, 0)",
+3,
+"Ordered to be Reported by Unanimous Consent.",
+"<calendar datetime="2013-07-17" state="REPORTED"> <text>Ordered to be Reported by Unanimous Consent.</text> </calendar> "
+],
+[
+"datetime.datetime(2014, 9, 15, 16, 25)",
+4,
+"On motion to suspend the rules and pass the bill, as amended Agreed to by voice vote.",
+"<vote how="by voice vote" type="vote" datetime="2014-09-15T16:25:00-04:00" where="h" result="pass" state="PASS_OVER:HOUSE"> <text>On motion to suspend the rules and pass the bill, as amended Agreed to by voice vote.</text> <reference ref="CR H7462" label="text"/> </vote> "
+],
+[
+"datetime.datetime(2014, 9, 18, 0, 0)",
+11,
+"Passed Senate with an amendment by Unanimous Consent.",
+"<vote how="by Unanimous Consent" type="vote2" datetime="2014-09-18" where="s" result="pass" state="PASS_BACK:SENATE"> <text>Passed Senate with an amendment by Unanimous Consent.</text> </vote> "
+],
+[
+"datetime.datetime(2014, 12, 11, 21, 38)",
+10,
+"On motion that the House agree with an amendment to the Senate amendment Agreed to by the Yeas and Nays: 219 - 206 (Roll No. 563).",
+"<vote how="roll" type="pingpong" roll="563" datetime="2014-12-11T21:38:00-05:00" where="h" result="pass" state="PASS_BACK:HOUSE"> <text>On motion that the House agree with an amendment to the Senate amendment Agreed to by the Yeas and Nays: 219 - 206 (Roll No. 563).</text> <reference ref="CR H9076-9273" label="text as House agreed to Senate amendment with an amendment"/> </vote> "
+],
+[
+"datetime.datetime(2014, 12, 13, 0, 0)",
+9,
+"Senate agreed to the House amendment to the Senate amendment to H.R. 83 by Yea-Nay Vote. 56 - 40. Record Vote Number: 354.",
+"<vote how="roll" type="pingpong" roll="354" datetime="2014-12-13" where="s" result="pass" state="PASSED:BILL"> <text>Senate agreed to the House amendment to the Senate amendment to H.R. 83 by Yea-Nay Vote. 56 - 40. Record Vote Number: 354.</text> <reference ref="CR S6813-6814" label="consideration"/> </vote> "
+],
+[
+"datetime.datetime(2014, 12, 16, 0, 0)",
+28,
+"Signed by President.",
+"<signed datetime="2014-12-16" state="ENACTED:SIGNED"> <text>Signed by President.</text> </signed> "
+]
+],
+noun: "bill",
+number: 83,
+senate_floor_schedule_postdate: null,
+sliplawnum: null,
+sliplawpubpriv: null,
+source: "thomas-congproj",
+source_link: null,
+sponsor: 400073,
+sponsor_role: 42711,
+thomas_link: "http://thomas.loc.gov/cgi-bin/bdquery/z?d113:hr83:",
+title: "H.R. 83: To require the Secretary of the Interior to assemble a team of technical, policy, and financial experts to address the energy needs of the insular areas of the United States and the Freely Associated States through the development of energy actio",
+title_without_number: "To require the Secretary of the Interior to assemble a team of technical, policy, and financial experts to address the energy needs of the insular areas of the United States and the Freely Associated States through the development of energy action plans aimed at promoting access to affordable, reliable energy, including increasing use of indigenous clean-energy resources, and for other purposes.",
+titles: [
+[
+"official",
+"introduced",
+"To require the Secretary of the Interior to assemble a team of technical, policy, and financial experts to address the energy needs of the insular areas of the United States and the Freely Associated States through the development of action plans aimed at reducing reliance on imported fossil fuels and increasing use of indigenous clean-energy resources, and for other purposes."
+],
+[
+"official",
+"amended by house",
+"To require the Secretary of the Interior to assemble a team of technical, policy, and financial experts to address the energy needs of the insular areas of the United States and the Freely Associated States through the development of energy action plans aimed at promoting access to affordable, reliable energy, including increasing use of indigenous clean-energy resources, and for other purposes."
+]
+]
+},
+required: "1/2",
+result: "Motion to Proceed Agreed to",
+session: "2014",
+source: "senate",
+source_label: "senate.gov",
+total_minus: 42,
+total_other: 4,
+total_plus: 54,
+vote_type: "On the Motion to Proceed"
+},
+{
+category: "procedural",
+category_label: "Procedural",
+chamber: "senate",
+chamber_label: "Senate",
+congress: 113,
+created: "2014-12-13T18:36:00",
+id: 116087,
+link: "https://www.govtrack.us/congress/votes/113-2014/s346",
+missing_data: false,
+number: 346,
+options: [
+{
+id: 444865,
+key: "+",
+value: "Yea",
+vote: 116087
+},
+{
+id: 444866,
+key: "-",
+value: "Nay",
+vote: 116087
+},
+{
+id: 444867,
+key: "P",
+value: "Present",
+vote: 116087
+},
+{
+id: 444868,
+key: "0",
+value: "Not Voting",
+vote: 116087
+}
+],
+question: "Motion to Proceed on H.R. 83: To require the Secretary of the Interior to assemble a team of technical, policy, and financial experts to ...",
+question_details: null,
+related_amendment: null,
+related_bill: {
+bill_resolution_type: "bill",
+bill_type: "house_bill",
+bill_type_label: "H.R.",
+congress: 113,
+current_status: "enacted_signed",
+current_status_date: "2014-12-16",
+current_status_description: "This bill was enacted after being signed by the President on December 16, 2014.",
+current_status_label: "Enacted — Signed by the President",
+display_number: "H.R. 83",
+docs_house_gov_postdate: "2014-12-09T19:23:59",
+id: 256160,
+introduced_date: "2013-01-03",
+is_alive: false,
+is_current: true,
+link: "https://www.govtrack.us/congress/bills/113/hr83",
+major_actions: [
+[
+"datetime.datetime(2013, 1, 3, 0, 0)",
+2,
+"Referred to the House Committee on Energy and Commerce.",
+"<action datetime="2013-01-03" state="REFERRED"> <text>Referred to the House Committee on Energy and Commerce.</text> </action> "
+],
+[
+"datetime.datetime(2013, 7, 17, 0, 0)",
+3,
+"Ordered to be Reported by Unanimous Consent.",
+"<calendar datetime="2013-07-17" state="REPORTED"> <text>Ordered to be Reported by Unanimous Consent.</text> </calendar> "
+],
+[
+"datetime.datetime(2014, 9, 15, 16, 25)",
+4,
+"On motion to suspend the rules and pass the bill, as amended Agreed to by voice vote.",
+"<vote how="by voice vote" type="vote" datetime="2014-09-15T16:25:00-04:00" where="h" result="pass" state="PASS_OVER:HOUSE"> <text>On motion to suspend the rules and pass the bill, as amended Agreed to by voice vote.</text> <reference ref="CR H7462" label="text"/> </vote> "
+],
+[
+"datetime.datetime(2014, 9, 18, 0, 0)",
+11,
+"Passed Senate with an amendment by Unanimous Consent.",
+"<vote how="by Unanimous Consent" type="vote2" datetime="2014-09-18" where="s" result="pass" state="PASS_BACK:SENATE"> <text>Passed Senate with an amendment by Unanimous Consent.</text> </vote> "
+],
+[
+"datetime.datetime(2014, 12, 11, 21, 38)",
+10,
+"On motion that the House agree with an amendment to the Senate amendment Agreed to by the Yeas and Nays: 219 - 206 (Roll No. 563).",
+"<vote how="roll" type="pingpong" roll="563" datetime="2014-12-11T21:38:00-05:00" where="h" result="pass" state="PASS_BACK:HOUSE"> <text>On motion that the House agree with an amendment to the Senate amendment Agreed to by the Yeas and Nays: 219 - 206 (Roll No. 563).</text> <reference ref="CR H9076-9273" label="text as House agreed to Senate amendment with an amendment"/> </vote> "
+],
+[
+"datetime.datetime(2014, 12, 13, 0, 0)",
+9,
+"Senate agreed to the House amendment to the Senate amendment to H.R. 83 by Yea-Nay Vote. 56 - 40. Record Vote Number: 354.",
+"<vote how="roll" type="pingpong" roll="354" datetime="2014-12-13" where="s" result="pass" state="PASSED:BILL"> <text>Senate agreed to the House amendment to the Senate amendment to H.R. 83 by Yea-Nay Vote. 56 - 40. Record Vote Number: 354.</text> <reference ref="CR S6813-6814" label="consideration"/> </vote> "
+],
+[
+"datetime.datetime(2014, 12, 16, 0, 0)",
+28,
+"Signed by President.",
+"<signed datetime="2014-12-16" state="ENACTED:SIGNED"> <text>Signed by President.</text> </signed> "
+]
+],
+noun: "bill",
+number: 83,
+senate_floor_schedule_postdate: null,
+sliplawnum: null,
+sliplawpubpriv: null,
+source: "thomas-congproj",
+source_link: null,
+sponsor: 400073,
+sponsor_role: 42711,
+thomas_link: "http://thomas.loc.gov/cgi-bin/bdquery/z?d113:hr83:",
+title: "H.R. 83: To require the Secretary of the Interior to assemble a team of technical, policy, and financial experts to address the energy needs of the insular areas of the United States and the Freely Associated States through the development of energy actio",
+title_without_number: "To require the Secretary of the Interior to assemble a team of technical, policy, and financial experts to address the energy needs of the insular areas of the United States and the Freely Associated States through the development of energy action plans aimed at promoting access to affordable, reliable energy, including increasing use of indigenous clean-energy resources, and for other purposes.",
+titles: [
+[
+"official",
+"introduced",
+"To require the Secretary of the Interior to assemble a team of technical, policy, and financial experts to address the energy needs of the insular areas of the United States and the Freely Associated States through the development of action plans aimed at reducing reliance on imported fossil fuels and increasing use of indigenous clean-energy resources, and for other purposes."
+],
+[
+"official",
+"amended by house",
+"To require the Secretary of the Interior to assemble a team of technical, policy, and financial experts to address the energy needs of the insular areas of the United States and the Freely Associated States through the development of energy action plans aimed at promoting access to affordable, reliable energy, including increasing use of indigenous clean-energy resources, and for other purposes."
+]
+]
+},
+required: "1/2",
+result: "Motion to Proceed Agreed to",
+session: "2014",
+source: "senate",
+source_label: "senate.gov",
+total_minus: 42,
+total_other: 4,
+total_plus: 54,
+vote_type: "On the Motion to Proceed"
+},
+{
+category: "procedural",
+category_label: "Procedural",
+chamber: "senate",
+chamber_label: "Senate",
+congress: 113,
+created: "2014-12-13T19:41:00",
+id: 116082,
+link: "https://www.govtrack.us/congress/votes/113-2014/s348",
+missing_data: false,
+number: 348,
+options: [
+{
+id: 444845,
+key: "+",
+value: "Yea",
+vote: 116082
+},
+{
+id: 444846,
+key: "-",
+value: "Nay",
+vote: 116082
+},
+{
+id: 444847,
+key: "P",
+value: "Present",
+vote: 116082
+},
+{
+id: 444848,
+key: "0",
+value: "Not Voting",
+vote: 116082
+}
+],
+question: "Motion to Proceed on H.R. 83: To require the Secretary of the Interior to assemble a team of technical, policy, and financial experts to ...",
+question_details: null,
+related_amendment: null,
+related_bill: {
+bill_resolution_type: "bill",
+bill_type: "house_bill",
+bill_type_label: "H.R.",
+congress: 113,
+current_status: "enacted_signed",
+current_status_date: "2014-12-16",
+current_status_description: "This bill was enacted after being signed by the President on December 16, 2014.",
+current_status_label: "Enacted — Signed by the President",
+display_number: "H.R. 83",
+docs_house_gov_postdate: "2014-12-09T19:23:59",
+id: 256160,
+introduced_date: "2013-01-03",
+is_alive: false,
+is_current: true,
+link: "https://www.govtrack.us/congress/bills/113/hr83",
+major_actions: [
+[
+"datetime.datetime(2013, 1, 3, 0, 0)",
+2,
+"Referred to the House Committee on Energy and Commerce.",
+"<action datetime="2013-01-03" state="REFERRED"> <text>Referred to the House Committee on Energy and Commerce.</text> </action> "
+],
+[
+"datetime.datetime(2013, 7, 17, 0, 0)",
+3,
+"Ordered to be Reported by Unanimous Consent.",
+"<calendar datetime="2013-07-17" state="REPORTED"> <text>Ordered to be Reported by Unanimous Consent.</text> </calendar> "
+],
+[
+"datetime.datetime(2014, 9, 15, 16, 25)",
+4,
+"On motion to suspend the rules and pass the bill, as amended Agreed to by voice vote.",
+"<vote how="by voice vote" type="vote" datetime="2014-09-15T16:25:00-04:00" where="h" result="pass" state="PASS_OVER:HOUSE"> <text>On motion to suspend the rules and pass the bill, as amended Agreed to by voice vote.</text> <reference ref="CR H7462" label="text"/> </vote> "
+],
+[
+"datetime.datetime(2014, 9, 18, 0, 0)",
+11,
+"Passed Senate with an amendment by Unanimous Consent.",
+"<vote how="by Unanimous Consent" type="vote2" datetime="2014-09-18" where="s" result="pass" state="PASS_BACK:SENATE"> <text>Passed Senate with an amendment by Unanimous Consent.</text> </vote> "
+],
+[
+"datetime.datetime(2014, 12, 11, 21, 38)",
+10,
+"On motion that the House agree with an amendment to the Senate amendment Agreed to by the Yeas and Nays: 219 - 206 (Roll No. 563).",
+"<vote how="roll" type="pingpong" roll="563" datetime="2014-12-11T21:38:00-05:00" where="h" result="pass" state="PASS_BACK:HOUSE"> <text>On motion that the House agree with an amendment to the Senate amendment Agreed to by the Yeas and Nays: 219 - 206 (Roll No. 563).</text> <reference ref="CR H9076-9273" label="text as House agreed to Senate amendment with an amendment"/> </vote> "
+],
+[
+"datetime.datetime(2014, 12, 13, 0, 0)",
+9,
+"Senate agreed to the House amendment to the Senate amendment to H.R. 83 by Yea-Nay Vote. 56 - 40. Record Vote Number: 354.",
+"<vote how="roll" type="pingpong" roll="354" datetime="2014-12-13" where="s" result="pass" state="PASSED:BILL"> <text>Senate agreed to the House amendment to the Senate amendment to H.R. 83 by Yea-Nay Vote. 56 - 40. Record Vote Number: 354.</text> <reference ref="CR S6813-6814" label="consideration"/> </vote> "
+],
+[
+"datetime.datetime(2014, 12, 16, 0, 0)",
+28,
+"Signed by President.",
+"<signed datetime="2014-12-16" state="ENACTED:SIGNED"> <text>Signed by President.</text> </signed> "
+]
+],
+noun: "bill",
+number: 83,
+senate_floor_schedule_postdate: null,
+sliplawnum: null,
+sliplawpubpriv: null,
+source: "thomas-congproj",
+source_link: null,
+sponsor: 400073,
+sponsor_role: 42711,
+thomas_link: "http://thomas.loc.gov/cgi-bin/bdquery/z?d113:hr83:",
+title: "H.R. 83: To require the Secretary of the Interior to assemble a team of technical, policy, and financial experts to address the energy needs of the insular areas of the United States and the Freely Associated States through the development of energy actio",
+title_without_number: "To require the Secretary of the Interior to assemble a team of technical, policy, and financial experts to address the energy needs of the insular areas of the United States and the Freely Associated States through the development of energy action plans aimed at promoting access to affordable, reliable energy, including increasing use of indigenous clean-energy resources, and for other purposes.",
+titles: [
+[
+"official",
+"introduced",
+"To require the Secretary of the Interior to assemble a team of technical, policy, and financial experts to address the energy needs of the insular areas of the United States and the Freely Associated States through the development of action plans aimed at reducing reliance on imported fossil fuels and increasing use of indigenous clean-energy resources, and for other purposes."
+],
+[
+"official",
+"amended by house",
+"To require the Secretary of the Interior to assemble a team of technical, policy, and financial experts to address the energy needs of the insular areas of the United States and the Freely Associated States through the development of energy action plans aimed at promoting access to affordable, reliable energy, including increasing use of indigenous clean-energy resources, and for other purposes."
+]
+]
+},
+required: "1/2",
+result: "Motion to Proceed Agreed to",
+session: "2014",
+source: "senate",
+source_label: "senate.gov",
+total_minus: 42,
+total_other: 4,
+total_plus: 54,
+vote_type: "On the Motion to Proceed"
+},
+{
+category: "procedural",
+category_label: "Procedural",
+chamber: "senate",
+chamber_label: "Senate",
+congress: 113,
+created: "2014-12-13T20:35:00",
+id: 116085,
+link: "https://www.govtrack.us/congress/votes/113-2014/s350",
+missing_data: false,
+number: 350,
+options: [
+{
+id: 444857,
+key: "+",
+value: "Yea",
+vote: 116085
+},
+{
+id: 444858,
+key: "-",
+value: "Nay",
+vote: 116085
+},
+{
+id: 444859,
+key: "P",
+value: "Present",
+vote: 116085
+},
+{
+id: 444860,
+key: "0",
+value: "Not Voting",
+vote: 116085
+}
+],
+question: "Motion to Proceed on H.R. 83: To require the Secretary of the Interior to assemble a team of technical, policy, and financial experts to ...",
+question_details: null,
+related_amendment: null,
+related_bill: {
+bill_resolution_type: "bill",
+bill_type: "house_bill",
+bill_type_label: "H.R.",
+congress: 113,
+current_status: "enacted_signed",
+current_status_date: "2014-12-16",
+current_status_description: "This bill was enacted after being signed by the President on December 16, 2014.",
+current_status_label: "Enacted — Signed by the President",
+display_number: "H.R. 83",
+docs_house_gov_postdate: "2014-12-09T19:23:59",
+id: 256160,
+introduced_date: "2013-01-03",
+is_alive: false,
+is_current: true,
+link: "https://www.govtrack.us/congress/bills/113/hr83",
+major_actions: [
+[
+"datetime.datetime(2013, 1, 3, 0, 0)",
+2,
+"Referred to the House Committee on Energy and Commerce.",
+"<action datetime="2013-01-03" state="REFERRED"> <text>Referred to the House Committee on Energy and Commerce.</text> </action> "
+],
+[
+"datetime.datetime(2013, 7, 17, 0, 0)",
+3,
+"Ordered to be Reported by Unanimous Consent.",
+"<calendar datetime="2013-07-17" state="REPORTED"> <text>Ordered to be Reported by Unanimous Consent.</text> </calendar> "
+],
+[
+"datetime.datetime(2014, 9, 15, 16, 25)",
+4,
+"On motion to suspend the rules and pass the bill, as amended Agreed to by voice vote.",
+"<vote how="by voice vote" type="vote" datetime="2014-09-15T16:25:00-04:00" where="h" result="pass" state="PASS_OVER:HOUSE"> <text>On motion to suspend the rules and pass the bill, as amended Agreed to by voice vote.</text> <reference ref="CR H7462" label="text"/> </vote> "
+],
+[
+"datetime.datetime(2014, 9, 18, 0, 0)",
+11,
+"Passed Senate with an amendment by Unanimous Consent.",
+"<vote how="by Unanimous Consent" type="vote2" datetime="2014-09-18" where="s" result="pass" state="PASS_BACK:SENATE"> <text>Passed Senate with an amendment by Unanimous Consent.</text> </vote> "
+],
+[
+"datetime.datetime(2014, 12, 11, 21, 38)",
+10,
+"On motion that the House agree with an amendment to the Senate amendment Agreed to by the Yeas and Nays: 219 - 206 (Roll No. 563).",
+"<vote how="roll" type="pingpong" roll="563" datetime="2014-12-11T21:38:00-05:00" where="h" result="pass" state="PASS_BACK:HOUSE"> <text>On motion that the House agree with an amendment to the Senate amendment Agreed to by the Yeas and Nays: 219 - 206 (Roll No. 563).</text> <reference ref="CR H9076-9273" label="text as House agreed to Senate amendment with an amendment"/> </vote> "
+],
+[
+"datetime.datetime(2014, 12, 13, 0, 0)",
+9,
+"Senate agreed to the House amendment to the Senate amendment to H.R. 83 by Yea-Nay Vote. 56 - 40. Record Vote Number: 354.",
+"<vote how="roll" type="pingpong" roll="354" datetime="2014-12-13" where="s" result="pass" state="PASSED:BILL"> <text>Senate agreed to the House amendment to the Senate amendment to H.R. 83 by Yea-Nay Vote. 56 - 40. Record Vote Number: 354.</text> <reference ref="CR S6813-6814" label="consideration"/> </vote> "
+],
+[
+"datetime.datetime(2014, 12, 16, 0, 0)",
+28,
+"Signed by President.",
+"<signed datetime="2014-12-16" state="ENACTED:SIGNED"> <text>Signed by President.</text> </signed> "
+]
+],
+noun: "bill",
+number: 83,
+senate_floor_schedule_postdate: null,
+sliplawnum: null,
+sliplawpubpriv: null,
+source: "thomas-congproj",
+source_link: null,
+sponsor: 400073,
+sponsor_role: 42711,
+thomas_link: "http://thomas.loc.gov/cgi-bin/bdquery/z?d113:hr83:",
+title: "H.R. 83: To require the Secretary of the Interior to assemble a team of technical, policy, and financial experts to address the energy needs of the insular areas of the United States and the Freely Associated States through the development of energy actio",
+title_without_number: "To require the Secretary of the Interior to assemble a team of technical, policy, and financial experts to address the energy needs of the insular areas of the United States and the Freely Associated States through the development of energy action plans aimed at promoting access to affordable, reliable energy, including increasing use of indigenous clean-energy resources, and for other purposes.",
+titles: [
+[
+"official",
+"introduced",
+"To require the Secretary of the Interior to assemble a team of technical, policy, and financial experts to address the energy needs of the insular areas of the United States and the Freely Associated States through the development of action plans aimed at reducing reliance on imported fossil fuels and increasing use of indigenous clean-energy resources, and for other purposes."
+],
+[
+"official",
+"amended by house",
+"To require the Secretary of the Interior to assemble a team of technical, policy, and financial experts to address the energy needs of the insular areas of the United States and the Freely Associated States through the development of energy action plans aimed at promoting access to affordable, reliable energy, including increasing use of indigenous clean-energy resources, and for other purposes."
+]
+]
+},
+required: "1/2",
+result: "Motion to Proceed Agreed to",
+session: "2014",
+source: "senate",
+source_label: "senate.gov",
+total_minus: 42,
+total_other: 5,
+total_plus: 53,
+vote_type: "On the Motion to Proceed"
+},
+{
+category: "cloture",
+category_label: "Cloture",
+chamber: "senate",
+chamber_label: "Senate",
+congress: 113,
+created: "2014-12-13T21:10:00",
+id: 116089,
+link: "https://www.govtrack.us/congress/votes/113-2014/s352",
+missing_data: false,
+number: 352,
+options: [
+{
+id: 444873,
+key: "+",
+value: "Yea",
+vote: 116089
+},
+{
+id: 444874,
+key: "-",
+value: "Nay",
+vote: 116089
+},
+{
+id: 444875,
+key: "P",
+value: "Present",
+vote: 116089
+},
+{
+id: 444876,
+key: "0",
+value: "Not Voting",
+vote: 116089
+}
+],
+question: "Cloture on H.R. 83: To require the Secretary of the Interior to assemble a team of technical, policy, and financial experts to ...",
+question_details: null,
+related_amendment: null,
+related_bill: {
+bill_resolution_type: "bill",
+bill_type: "house_bill",
+bill_type_label: "H.R.",
+congress: 113,
+current_status: "enacted_signed",
+current_status_date: "2014-12-16",
+current_status_description: "This bill was enacted after being signed by the President on December 16, 2014.",
+current_status_label: "Enacted — Signed by the President",
+display_number: "H.R. 83",
+docs_house_gov_postdate: "2014-12-09T19:23:59",
+id: 256160,
+introduced_date: "2013-01-03",
+is_alive: false,
+is_current: true,
+link: "https://www.govtrack.us/congress/bills/113/hr83",
+major_actions: [
+[
+"datetime.datetime(2013, 1, 3, 0, 0)",
+2,
+"Referred to the House Committee on Energy and Commerce.",
+"<action datetime="2013-01-03" state="REFERRED"> <text>Referred to the House Committee on Energy and Commerce.</text> </action> "
+],
+[
+"datetime.datetime(2013, 7, 17, 0, 0)",
+3,
+"Ordered to be Reported by Unanimous Consent.",
+"<calendar datetime="2013-07-17" state="REPORTED"> <text>Ordered to be Reported by Unanimous Consent.</text> </calendar> "
+],
+[
+"datetime.datetime(2014, 9, 15, 16, 25)",
+4,
+"On motion to suspend the rules and pass the bill, as amended Agreed to by voice vote.",
+"<vote how="by voice vote" type="vote" datetime="2014-09-15T16:25:00-04:00" where="h" result="pass" state="PASS_OVER:HOUSE"> <text>On motion to suspend the rules and pass the bill, as amended Agreed to by voice vote.</text> <reference ref="CR H7462" label="text"/> </vote> "
+],
+[
+"datetime.datetime(2014, 9, 18, 0, 0)",
+11,
+"Passed Senate with an amendment by Unanimous Consent.",
+"<vote how="by Unanimous Consent" type="vote2" datetime="2014-09-18" where="s" result="pass" state="PASS_BACK:SENATE"> <text>Passed Senate with an amendment by Unanimous Consent.</text> </vote> "
+],
+[
+"datetime.datetime(2014, 12, 11, 21, 38)",
+10,
+"On motion that the House agree with an amendment to the Senate amendment Agreed to by the Yeas and Nays: 219 - 206 (Roll No. 563).",
+"<vote how="roll" type="pingpong" roll="563" datetime="2014-12-11T21:38:00-05:00" where="h" result="pass" state="PASS_BACK:HOUSE"> <text>On motion that the House agree with an amendment to the Senate amendment Agreed to by the Yeas and Nays: 219 - 206 (Roll No. 563).</text> <reference ref="CR H9076-9273" label="text as House agreed to Senate amendment with an amendment"/> </vote> "
+],
+[
+"datetime.datetime(2014, 12, 13, 0, 0)",
+9,
+"Senate agreed to the House amendment to the Senate amendment to H.R. 83 by Yea-Nay Vote. 56 - 40. Record Vote Number: 354.",
+"<vote how="roll" type="pingpong" roll="354" datetime="2014-12-13" where="s" result="pass" state="PASSED:BILL"> <text>Senate agreed to the House amendment to the Senate amendment to H.R. 83 by Yea-Nay Vote. 56 - 40. Record Vote Number: 354.</text> <reference ref="CR S6813-6814" label="consideration"/> </vote> "
+],
+[
+"datetime.datetime(2014, 12, 16, 0, 0)",
+28,
+"Signed by President.",
+"<signed datetime="2014-12-16" state="ENACTED:SIGNED"> <text>Signed by President.</text> </signed> "
+]
+],
+noun: "bill",
+number: 83,
+senate_floor_schedule_postdate: null,
+sliplawnum: null,
+sliplawpubpriv: null,
+source: "thomas-congproj",
+source_link: null,
+sponsor: 400073,
+sponsor_role: 42711,
+thomas_link: "http://thomas.loc.gov/cgi-bin/bdquery/z?d113:hr83:",
+title: "H.R. 83: To require the Secretary of the Interior to assemble a team of technical, policy, and financial experts to address the energy needs of the insular areas of the United States and the Freely Associated States through the development of energy actio",
+title_without_number: "To require the Secretary of the Interior to assemble a team of technical, policy, and financial experts to address the energy needs of the insular areas of the United States and the Freely Associated States through the development of energy action plans aimed at promoting access to affordable, reliable energy, including increasing use of indigenous clean-energy resources, and for other purposes.",
+titles: [
+[
+"official",
+"introduced",
+"To require the Secretary of the Interior to assemble a team of technical, policy, and financial experts to address the energy needs of the insular areas of the United States and the Freely Associated States through the development of action plans aimed at reducing reliance on imported fossil fuels and increasing use of indigenous clean-energy resources, and for other purposes."
+],
+[
+"official",
+"amended by house",
+"To require the Secretary of the Interior to assemble a team of technical, policy, and financial experts to address the energy needs of the insular areas of the United States and the Freely Associated States through the development of energy action plans aimed at promoting access to affordable, reliable energy, including increasing use of indigenous clean-energy resources, and for other purposes."
+]
+]
+},
+required: "3/5",
+result: "Cloture Motion Agreed to",
+session: "2014",
+source: "senate",
+source_label: "senate.gov",
+total_minus: 19,
+total_other: 4,
+total_plus: 77,
+vote_type: "On the Cloture Motion"
+},
+{
+category: "procedural",
+category_label: "Procedural",
+chamber: "senate",
+chamber_label: "Senate",
+congress: 113,
+created: "2014-12-13T21:34:00",
+id: 116090,
+link: "https://www.govtrack.us/congress/votes/113-2014/s353",
+missing_data: false,
+number: 353,
+options: [
+{
+id: 444877,
+key: "+",
+value: "Yea",
+vote: 116090
+},
+{
+id: 444878,
+key: "-",
+value: "Nay",
+vote: 116090
+},
+{
+id: 444879,
+key: "P",
+value: "Present",
+vote: 116090
+},
+{
+id: 444880,
+key: "0",
+value: "Not Voting",
+vote: 116090
+}
+],
+question: "On the Point of Order H.R. 83",
+question_details: null,
+related_amendment: null,
+related_bill: {
+bill_resolution_type: "bill",
+bill_type: "house_bill",
+bill_type_label: "H.R.",
+congress: 113,
+current_status: "enacted_signed",
+current_status_date: "2014-12-16",
+current_status_description: "This bill was enacted after being signed by the President on December 16, 2014.",
+current_status_label: "Enacted — Signed by the President",
+display_number: "H.R. 83",
+docs_house_gov_postdate: "2014-12-09T19:23:59",
+id: 256160,
+introduced_date: "2013-01-03",
+is_alive: false,
+is_current: true,
+link: "https://www.govtrack.us/congress/bills/113/hr83",
+major_actions: [
+[
+"datetime.datetime(2013, 1, 3, 0, 0)",
+2,
+"Referred to the House Committee on Energy and Commerce.",
+"<action datetime="2013-01-03" state="REFERRED"> <text>Referred to the House Committee on Energy and Commerce.</text> </action> "
+],
+[
+"datetime.datetime(2013, 7, 17, 0, 0)",
+3,
+"Ordered to be Reported by Unanimous Consent.",
+"<calendar datetime="2013-07-17" state="REPORTED"> <text>Ordered to be Reported by Unanimous Consent.</text> </calendar> "
+],
+[
+"datetime.datetime(2014, 9, 15, 16, 25)",
+4,
+"On motion to suspend the rules and pass the bill, as amended Agreed to by voice vote.",
+"<vote how="by voice vote" type="vote" datetime="2014-09-15T16:25:00-04:00" where="h" result="pass" state="PASS_OVER:HOUSE"> <text>On motion to suspend the rules and pass the bill, as amended Agreed to by voice vote.</text> <reference ref="CR H7462" label="text"/> </vote> "
+],
+[
+"datetime.datetime(2014, 9, 18, 0, 0)",
+11,
+"Passed Senate with an amendment by Unanimous Consent.",
+"<vote how="by Unanimous Consent" type="vote2" datetime="2014-09-18" where="s" result="pass" state="PASS_BACK:SENATE"> <text>Passed Senate with an amendment by Unanimous Consent.</text> </vote> "
+],
+[
+"datetime.datetime(2014, 12, 11, 21, 38)",
+10,
+"On motion that the House agree with an amendment to the Senate amendment Agreed to by the Yeas and Nays: 219 - 206 (Roll No. 563).",
+"<vote how="roll" type="pingpong" roll="563" datetime="2014-12-11T21:38:00-05:00" where="h" result="pass" state="PASS_BACK:HOUSE"> <text>On motion that the House agree with an amendment to the Senate amendment Agreed to by the Yeas and Nays: 219 - 206 (Roll No. 563).</text> <reference ref="CR H9076-9273" label="text as House agreed to Senate amendment with an amendment"/> </vote> "
+],
+[
+"datetime.datetime(2014, 12, 13, 0, 0)",
+9,
+"Senate agreed to the House amendment to the Senate amendment to H.R. 83 by Yea-Nay Vote. 56 - 40. Record Vote Number: 354.",
+"<vote how="roll" type="pingpong" roll="354" datetime="2014-12-13" where="s" result="pass" state="PASSED:BILL"> <text>Senate agreed to the House amendment to the Senate amendment to H.R. 83 by Yea-Nay Vote. 56 - 40. Record Vote Number: 354.</text> <reference ref="CR S6813-6814" label="consideration"/> </vote> "
+],
+[
+"datetime.datetime(2014, 12, 16, 0, 0)",
+28,
+"Signed by President.",
+"<signed datetime="2014-12-16" state="ENACTED:SIGNED"> <text>Signed by President.</text> </signed> "
+]
+],
+noun: "bill",
+number: 83,
+senate_floor_schedule_postdate: null,
+sliplawnum: null,
+sliplawpubpriv: null,
+source: "thomas-congproj",
+source_link: null,
+sponsor: 400073,
+sponsor_role: 42711,
+thomas_link: "http://thomas.loc.gov/cgi-bin/bdquery/z?d113:hr83:",
+title: "H.R. 83: To require the Secretary of the Interior to assemble a team of technical, policy, and financial experts to address the energy needs of the insular areas of the United States and the Freely Associated States through the development of energy actio",
+title_without_number: "To require the Secretary of the Interior to assemble a team of technical, policy, and financial experts to address the energy needs of the insular areas of the United States and the Freely Associated States through the development of energy action plans aimed at promoting access to affordable, reliable energy, including increasing use of indigenous clean-energy resources, and for other purposes.",
+titles: [
+[
+"official",
+"introduced",
+"To require the Secretary of the Interior to assemble a team of technical, policy, and financial experts to address the energy needs of the insular areas of the United States and the Freely Associated States through the development of action plans aimed at reducing reliance on imported fossil fuels and increasing use of indigenous clean-energy resources, and for other purposes."
+],
+[
+"official",
+"amended by house",
+"To require the Secretary of the Interior to assemble a team of technical, policy, and financial experts to address the energy needs of the insular areas of the United States and the Freely Associated States through the development of energy action plans aimed at promoting access to affordable, reliable energy, including increasing use of indigenous clean-energy resources, and for other purposes."
+]
+]
+},
+required: "1/2",
+result: "Point of Order Not Well Taken",
+session: "2014",
+source: "senate",
+source_label: "senate.gov",
+total_minus: 74,
+total_other: 4,
+total_plus: 22,
+vote_type: "On the Point of Order H.R. 83"
+},
+{
+category: "passage",
+category_label: "Passage",
+chamber: "senate",
+chamber_label: "Senate",
+congress: 113,
+created: "2014-12-13T21:50:00",
+id: 116091,
+link: "https://www.govtrack.us/congress/votes/113-2014/s354",
+missing_data: false,
+number: 354,
+options: [
+{
+id: 444881,
+key: "+",
+value: "Yea",
+vote: 116091
+},
+{
+id: 444882,
+key: "-",
+value: "Nay",
+vote: 116091
+},
+{
+id: 444883,
+key: "P",
+value: "Present",
+vote: 116091
+},
+{
+id: 444884,
+key: "0",
+value: "Not Voting",
+vote: 116091
+}
+],
+question: "H.R. 83: Consolidated and Further Continuing Appropriations Act, 2015 ",
+question_details: "Motion to Concur in the House Amendment to the Senate Amendment to H.R. 83, in the Senate",
+related_amendment: null,
+related_bill: {
+bill_resolution_type: "bill",
+bill_type: "house_bill",
+bill_type_label: "H.R.",
+congress: 113,
+current_status: "enacted_signed",
+current_status_date: "2014-12-16",
+current_status_description: "This bill was enacted after being signed by the President on December 16, 2014.",
+current_status_label: "Enacted — Signed by the President",
+display_number: "H.R. 83",
+docs_house_gov_postdate: "2014-12-09T19:23:59",
+id: 256160,
+introduced_date: "2013-01-03",
+is_alive: false,
+is_current: true,
+link: "https://www.govtrack.us/congress/bills/113/hr83",
+major_actions: [
+[
+"datetime.datetime(2013, 1, 3, 0, 0)",
+2,
+"Referred to the House Committee on Energy and Commerce.",
+"<action datetime="2013-01-03" state="REFERRED"> <text>Referred to the House Committee on Energy and Commerce.</text> </action> "
+],
+[
+"datetime.datetime(2013, 7, 17, 0, 0)",
+3,
+"Ordered to be Reported by Unanimous Consent.",
+"<calendar datetime="2013-07-17" state="REPORTED"> <text>Ordered to be Reported by Unanimous Consent.</text> </calendar> "
+],
+[
+"datetime.datetime(2014, 9, 15, 16, 25)",
+4,
+"On motion to suspend the rules and pass the bill, as amended Agreed to by voice vote.",
+"<vote how="by voice vote" type="vote" datetime="2014-09-15T16:25:00-04:00" where="h" result="pass" state="PASS_OVER:HOUSE"> <text>On motion to suspend the rules and pass the bill, as amended Agreed to by voice vote.</text> <reference ref="CR H7462" label="text"/> </vote> "
+],
+[
+"datetime.datetime(2014, 9, 18, 0, 0)",
+11,
+"Passed Senate with an amendment by Unanimous Consent.",
+"<vote how="by Unanimous Consent" type="vote2" datetime="2014-09-18" where="s" result="pass" state="PASS_BACK:SENATE"> <text>Passed Senate with an amendment by Unanimous Consent.</text> </vote> "
+],
+[
+"datetime.datetime(2014, 12, 11, 21, 38)",
+10,
+"On motion that the House agree with an amendment to the Senate amendment Agreed to by the Yeas and Nays: 219 - 206 (Roll No. 563).",
+"<vote how="roll" type="pingpong" roll="563" datetime="2014-12-11T21:38:00-05:00" where="h" result="pass" state="PASS_BACK:HOUSE"> <text>On motion that the House agree with an amendment to the Senate amendment Agreed to by the Yeas and Nays: 219 - 206 (Roll No. 563).</text> <reference ref="CR H9076-9273" label="text as House agreed to Senate amendment with an amendment"/> </vote> "
+],
+[
+"datetime.datetime(2014, 12, 13, 0, 0)",
+9,
+"Senate agreed to the House amendment to the Senate amendment to H.R. 83 by Yea-Nay Vote. 56 - 40. Record Vote Number: 354.",
+"<vote how="roll" type="pingpong" roll="354" datetime="2014-12-13" where="s" result="pass" state="PASSED:BILL"> <text>Senate agreed to the House amendment to the Senate amendment to H.R. 83 by Yea-Nay Vote. 56 - 40. Record Vote Number: 354.</text> <reference ref="CR S6813-6814" label="consideration"/> </vote> "
+],
+[
+"datetime.datetime(2014, 12, 16, 0, 0)",
+28,
+"Signed by President.",
+"<signed datetime="2014-12-16" state="ENACTED:SIGNED"> <text>Signed by President.</text> </signed> "
+]
+],
+noun: "bill",
+number: 83,
+senate_floor_schedule_postdate: null,
+sliplawnum: null,
+sliplawpubpriv: null,
+source: "thomas-congproj",
+source_link: null,
+sponsor: 400073,
+sponsor_role: 42711,
+thomas_link: "http://thomas.loc.gov/cgi-bin/bdquery/z?d113:hr83:",
+title: "H.R. 83: To require the Secretary of the Interior to assemble a team of technical, policy, and financial experts to address the energy needs of the insular areas of the United States and the Freely Associated States through the development of energy actio",
+title_without_number: "To require the Secretary of the Interior to assemble a team of technical, policy, and financial experts to address the energy needs of the insular areas of the United States and the Freely Associated States through the development of energy action plans aimed at promoting access to affordable, reliable energy, including increasing use of indigenous clean-energy resources, and for other purposes.",
+titles: [
+[
+"official",
+"introduced",
+"To require the Secretary of the Interior to assemble a team of technical, policy, and financial experts to address the energy needs of the insular areas of the United States and the Freely Associated States through the development of action plans aimed at reducing reliance on imported fossil fuels and increasing use of indigenous clean-energy resources, and for other purposes."
+],
+[
+"official",
+"amended by house",
+"To require the Secretary of the Interior to assemble a team of technical, policy, and financial experts to address the energy needs of the insular areas of the United States and the Freely Associated States through the development of energy action plans aimed at promoting access to affordable, reliable energy, including increasing use of indigenous clean-energy resources, and for other purposes."
+]
+]
+},
+required: "1/2",
+result: "Motion Agreed to",
+session: "2014",
+source: "senate",
+source_label: "senate.gov",
+total_minus: 40,
+total_other: 4,
+total_plus: 56,
+vote_type: "Motion to Concur in the House Amendment to the Senate Amendment to H.R. 83"
+}
+]
+}
