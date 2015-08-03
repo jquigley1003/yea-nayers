@@ -6,6 +6,11 @@
     <div class="input-group">
       <label class="sr-only">Subject</label>
       <input type="text" class="form-control" ng-model="billForm.query" required placeholder="Search for Bills">
+      <select type="text" class="form-control" ng-model="congressForm.query">
+        <option value="114">114th Congress: 2015-2017</option>
+        <option value="113">113th Congress: 2013-2015</option>
+        <option value="112">112th Congress: 2011-2013</option>
+      </select>
     </div>
   </div>
     <button type="submit" class="btn btn-primary btn-md">Search Now</button>

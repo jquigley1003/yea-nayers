@@ -4,9 +4,10 @@ angular.module('YeaNayers')
     $scope.searchBills = function() {
 
       $scope.billForm.query;
+      $scope.congressForm.query;
 
       var govTrackUrl = 'https://www.govtrack.us/api/v2/bill' +
-      '?q=' + $scope.billForm.query + '&congress=113&order_by=-current_status_date&limit=600';
+      '?q=' + $scope.billForm.query + '&congress=' + $scope.congressForm.query + '&order_by=-current_status_date&limit=600';
       $http.get(govTrackUrl).success(function(data) {
         $scope.bills = data.objects;
         console.log('bills.length: ' + $scope.bills.length);
@@ -14,9 +15,17 @@ angular.module('YeaNayers')
     };
 
     function getVote(chamber, voteRollCall) {
-      return _.find(voteRollCall, function(vote) {
-        return vote.chamber === chamber && vote.category === 'passage';
-      })
+      passageSuspension = _.find(voteRollCall, { 'chamber': chamber, 'category': 'passage_suspension'});
+      if (passageSuspension) {
+        return _.find(voteRollCall, function(vote) {
+          return vote.chamber === chamber && vote.category === 'passage_suspension';
+        })
+      }
+      else {
+        return _.find(voteRollCall, function(vote) {
+          return vote.chamber === chamber && vote.category === 'passage';
+        })        
+      }
     }
 
     $scope.findVoteRollCall = function(bill) {
@@ -28,6 +37,10 @@ angular.module('YeaNayers')
       bill.noSenateVote = true;
       bill.noCongressVote = true;
       $scope.showVotes = false;
+      $scope.congressionalVoteByMember = null;
+      $scope.senateVoteByMember = null;
+
+// Find the voting results for a specific bill
 
       var govTrackUrl2 = 'https://www.govtrack.us/api/v2/vote?related_bill=' + bill.id
       $http.get(govTrackUrl2).success(function(data) {
@@ -38,6 +51,8 @@ angular.module('YeaNayers')
         var voteRollCall = data.objects;
 
         console.log('voteRollCall.length: ' + voteRollCall.length);
+
+// Check for any House votes for this specific bill
 
         var congressionalVote = getVote('house',  voteRollCall);
 
@@ -58,6 +73,8 @@ angular.module('YeaNayers')
           });
 
         }
+
+// Check for any Senate votes for this specific bill
 
         var senateVote = getVote('senate', voteRollCall);
 

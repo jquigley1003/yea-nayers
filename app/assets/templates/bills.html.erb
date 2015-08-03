@@ -8,6 +8,7 @@
     <p>{{bill.sponsor.id}}</p>
     <p><span style="font-weight:bold;">Bill Sponsor: </span>{{bill.sponsor.name}}</p>
     <p><img ng-src="https://www.govtrack.us/data/photos/{{bill.sponsor.id}}-100px.jpeg" /></p>
+    <a href="{{bill.link}}/text" target="_blank">{{bill.link}}/text</a>
   </div>
   <div ng-show="bill.noVoteInfo">
     <p>No Information Available About This Bill</p>
