@@ -1,6 +1,8 @@
 angular.module('YeaNayers').directive('myMap', function(){
 	return{
 		template: function(){
+			d3.select("svg").remove();
+			
 			var width = 960,
 				height = 500;
 

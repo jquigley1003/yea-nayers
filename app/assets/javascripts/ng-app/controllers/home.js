@@ -1,6 +1,6 @@
 angular.module('YeaNayers')
   .controller('HomeCtrl', ['$scope', '$http', function($scope, $http) {
-    
+
     $scope.searchBills = function() {
 
       $scope.billForm.query;
@@ -20,35 +20,63 @@ angular.module('YeaNayers')
     }
 
     $scope.findVoteRollCall = function(bill) {
-      // 256160
+
+      bill.voteInfo = false;
+      bill.noVoteInfo = true;
+      bill.yesSenateVote = false;
+      bill.yesCongressVote = false;
+      bill.noSenateVote = true;
+      bill.noCongressVote = true;
+      $scope.showVotes = false;
+
       var govTrackUrl2 = 'https://www.govtrack.us/api/v2/vote?related_bill=' + bill.id
       $http.get(govTrackUrl2).success(function(data) {
+
+        bill.voteInfo = true;
+        bill.noVoteInfo = false;
+
         var voteRollCall = data.objects;
+
         console.log('voteRollCall.length: ' + voteRollCall.length);
 
         var congressionalVote = getVote('house',  voteRollCall);
-        var congressionalVoteId = congressionalVote.options[0].vote;
-        console.log('congressionalVote = ' + congressionalVoteId + ' // should be 116058');
+
+        if (congressionalVote) {
+
+          bill.yesCongressVote = true;
+          bill.noCongressVote = false;
+          $scope.showVotes = true;
+
+          var congressionalVoteId = congressionalVote.options[0].vote;
+          console.log('congressionalVote = ' + congressionalVoteId + ' // should be 116058');
+
+          var govTrackUrl3 = 'https://www.govtrack.us/api/v2/vote_voter?vote=' + 
+            congressionalVoteId + '&limit=450';
+          $http.get(govTrackUrl3).success(function(data) {
+            $scope.congressionalVoteByMember = data.objects;
+            console.log('congressionalVoteByMember.length: ' + $scope.congressionalVoteByMember.length);         
+          });
+
+        }
+
         var senateVote = getVote('senate', voteRollCall);
-        var senateVoteId = senateVote.options[0].vote;
-        console.log('senateVote = ' + senateVoteId + ' // should be 116091');
-        
-        var govTrackUrl3 = 'https://www.govtrack.us/api/v2/vote_voter?vote=' + 
-          congressionalVoteId + '&limit=450';
-        $http.get(govTrackUrl3).success(function(data) {
-          $scope.congressionalVoteByMember = data.objects;
-          console.log('congressionalVoteByMember.length: ' + $scope.congressionalVoteByMember.length);
-          
-        });
 
-        var govTrackUrl4 = 'https://www.govtrack.us/api/v2/vote_voter?vote=' + 
-          senateVoteId + '&limit=450';
-        $http.get(govTrackUrl4).success(function(data) {
-          $scope.senateVoteByMember = data.objects;
-          console.log('senateVoteByMember.length: ' + $scope.senateVoteByMember.length);
-        });
+        if (senateVote) {
+
+          bill.yesSenateVote = true;
+          bill.noSenateVote = false;
+          $scope.showVotes = true;
+
+          var senateVoteId = senateVote.options[0].vote;
+          console.log('senateVote = ' + senateVoteId + ' // should be 116091');
+
+          var govTrackUrl4 = 'https://www.govtrack.us/api/v2/vote_voter?vote=' + 
+            senateVoteId + '&limit=450';
+          $http.get(govTrackUrl4).success(function(data) {
+            $scope.senateVoteByMember = data.objects;
+            console.log('senateVoteByMember.length: ' + $scope.senateVoteByMember.length);
+          });        
+        }
       });
-
-      bill.voteInfo = true;
     };
   }]);

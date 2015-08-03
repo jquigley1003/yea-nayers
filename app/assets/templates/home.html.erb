@@ -10,11 +10,11 @@
   </div>
     <button type="submit" class="btn btn-primary btn-md">Search Now</button>
   </form>
-  <div my-map >
+  <div my-map-four >
   </div>
   <div style="position:absolute; left:900px; height:600px; overflow:scroll;" ng-include="'bills.html'" >
   </div>
-  <div style="position:absolute; left:0px; top:550px;" >
+  <div ng-show="showVotes" style="position:absolute; left:0px; top:550px;" >
     <ul ng-repeat="vote in congressionalVoteByMember" style="display:inline-block; width:600px;">
       <li style="font-size:12px;">{{vote.option.value}} {{vote.person.name}}</li>
     </ul>

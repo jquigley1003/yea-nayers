@@ -9,5 +9,14 @@
     <p><span style="font-weight:bold;">Bill Sponsor: </span>{{bill.sponsor.name}}</p>
     <p><img ng-src="https://www.govtrack.us/data/photos/{{bill.sponsor.id}}-100px.jpeg" /></p>
   </div>
+  <div ng-show="bill.noVoteInfo">
+    <p>No Information Available About This Bill</p>
+  </div>
+  <div ng-show="bill.noSenateVote">
+    <p>No Final Votes From The Senate</p>
+  </div>
+  <div ng-show="bill.noCongressVote">
+    <p>No Final Votes From The House</p>
+  </div>    
 </div>
 

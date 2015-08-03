@@ -1,5 +1,5 @@
 source 'https://rubygems.org'
-ruby '2.1.2'
+ruby '2.2.0'
 
 gem 'd3-rails'
 gem 'bower-rails'
@@ -20,8 +20,8 @@ gem 'json'
 gem 'sdoc', '~> 0.4.0', group: :doc
 gem 'bcrypt', '~> 3.1.7'
 gem 'httparty'
-
 gem "foreman"
+
 group :production, :staging do
   gem "rails_12factor"
   gem "rails_stdout_logging"

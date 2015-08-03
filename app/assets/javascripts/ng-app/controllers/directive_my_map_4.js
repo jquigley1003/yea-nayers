@@ -1,6 +1,7 @@
 angular.module('YeaNayers').directive('myMapFour', function(){
   return{
     template: function(){
+      d3.select("svg").remove();
 
       var width = 960,
           height = 600;
@@ -141,7 +142,6 @@ angular.module('YeaNayers').directive('myMapFour', function(){
       }
 
       d3.select(self.frameElement).style("height", height + "px");
-
     }
   }
 });

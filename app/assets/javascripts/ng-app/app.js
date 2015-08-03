@@ -10,15 +10,15 @@ angular.module('YeaNayers', [
 	 */
 	$stateProvider
 		.state('home', {
-			url: '',
+			url: '/',
 			templateUrl: 'home.html',
 			controller: 'HomeCtrl'
 		})
 
-		.state('bill_detail', {
-			url: '/bill_detail',
-			templateUrl: 'bill_detail.html',
-			controller: 'BillDetailCtrl'
+		.state('about', {
+			url: '/about',
+			templateUrl: 'about.html',
+			controller: 'AboutCtrl'
 		});
 
 	// default fall back route
@@ -29,4 +29,7 @@ angular.module('YeaNayers', [
 	//     enabled: true,
 	//     requireBase: false
 	// });
+  }])
+  .run(['$state', function($state) {
+    $state.go('home'); //make a transition to home state when app starts
 }]);
