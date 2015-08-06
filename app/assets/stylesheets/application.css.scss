@@ -70,3 +70,16 @@ path {
 .selected {
   fill: #F08C00;
 }
+
+.bold-border {
+  font-weight: bold;
+  border: 2px solid #000000;
+  margin-left: 65%;
+}
+
+#mapContainer {
+  padding: 0px;
+  margin: 0px auto;
+  width: 50%;
+  height: 50%;
+}

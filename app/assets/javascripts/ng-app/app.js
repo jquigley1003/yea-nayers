@@ -12,7 +12,7 @@ angular.module('YeaNayers', [
 		.state('home', {
 			url: '/',
 			templateUrl: 'home.html',
-			controller: 'HomeCtrl'
+			controller: 'HomeCtrl as homeCtrl'
 		})
 
 		.state('about', {

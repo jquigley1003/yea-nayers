@@ -1,7 +1,9 @@
-angular.module('YeaNayers').directive('myMapFour', function(){
+angular.module('YeaNayers').directive('myMapFour',['voteService', function(voteService){
   return{
     template: function(){
       d3.select("svg").remove();
+
+      // var houseVote = voteService;
 
       var width = 960,
           height = 600;
@@ -19,23 +21,23 @@ angular.module('YeaNayers').directive('myMapFour', function(){
 
       var components = color.domain().map(function() { return []; });
 
-      var svg = d3.select("body").append("svg")
+      var svg = d3.select("#mapContainer").append("svg")
           .attr("width", width)
           .attr("height", height);
 
-      var legend = svg.append("g")
-          .attr("class", "legend")
-          .attr("transform", "translate(" + ((width - color.domain().length * 24) / 2) + ",10)")
-          .style("cursor", "pointer")
-        .selectAll("rect")
-          .data(color.domain())
-        .enter().append("rect")
-          .attr("x", function(d) { return d * 24; })
-          .attr("width", 24 - 3)
-          .attr("height", 24 - 3)
-          .style("stroke", function(d) { return d ? null : "#000"; })
-          .style("fill", color)
-          .on("click", clicklegend);
+      // var legend = svg.append("g")
+      //     .attr("class", "legend")
+      //     .attr("transform", "translate(" + ((width - color.domain().length * 24) / 2) + ",10)")
+      //     .style("cursor", "pointer")
+      //   .selectAll("rect")
+      //     .data(color.domain())
+      //   .enter().append("rect")
+      //     .attr("x", function(d) { return d * 24; })
+      //     .attr("width", 24 - 3)
+      //     .attr("height", 24 - 3)
+      //     .style("stroke", function(d) { return d ? null : "#000"; })
+      //     .style("fill", color)
+      //     .on("click", clicklegend);
 
       d3.select(self)
           .on("keydown", keydown)
@@ -76,6 +78,14 @@ angular.module('YeaNayers').directive('myMapFour', function(){
             //   .on("dragstart", dragstart)
             //   .on("drag", drag)
             //   .on("click", click));
+
+        svg.append("g")
+            .attr("class", "bubble")
+          .selectAll("circle")
+            .data(topojson.feature(us, us.objects.counties).features)
+          .enter().append("circle")
+            .attr("transform", function(d) { return "translate(" + path.centroid(d) + ")"; })
+            .attr("r", 1.5);
 
         top.location.hash.split("").slice(1, features.length).forEach(function(c, i) {
           if ((c = +c) >= 0 && c < 10) assign(features[i], c ? c - 1 : null);
@@ -140,9 +150,8 @@ angular.module('YeaNayers').directive('myMapFour', function(){
           clicklegend(i);
         }
       }
-
       d3.select(self.frameElement).style("height", height + "px");
     }
   }
-});
+}]);
 

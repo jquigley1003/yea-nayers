@@ -1,5 +1,5 @@
 <h2>Bills in the {{congressForm.query}} U.S. Congress</h2>
-<div class="bill-frame" ng-repeat="bill in bills" ng-click="findVoteRollCall(bill)">
+<div class="bill-frame" ng-repeat="bill in bills" ng-click="homeCtrl.findVoteRollCall(bill)">
   <p style="font-weight:bold;">{{bill.title}}</p>
   <p>{{bill.current_status_label}}</p>
   <p>Status Date: {{bill.current_status_date}}</p>
@@ -9,15 +9,19 @@
     <p><span style="font-weight:bold;">Bill Sponsor: </span>{{bill.sponsor.name}}</p>
     <p><img ng-src="https://www.govtrack.us/data/photos/{{bill.sponsor.id}}-100px.jpeg" /></p>
     <a href="{{bill.link}}/text" target="_blank">{{bill.link}}/text</a>
-  </div>
-  <div ng-show="bill.noVoteInfo">
-    <p>No Information Available About This Bill</p>
-  </div>
-  <div ng-show="bill.noSenateVote">
-    <p>No Final Votes From The Senate</p>
-  </div>
-  <div ng-show="bill.noCongressVote">
-    <p>No Final Votes From The House</p>
-  </div>    
+    <div ng-show="bill.noVoteInfo">
+      <p>No Information Available About This Bill</p>
+    </div>
+    <div ng-show="bill.noSenateVote">
+      <p>No Final Votes From The Senate</p>
+    </div>
+    <div ng-show="bill.noHouseVote">
+      <p>No Final Votes From The House</p>
+    </div>
+    <div class="bold-border" ng-mouseover="bill.voteInfo = ! bill.voteInfo">
+      Place Cursor Here Close!
+    </div>
+  </div>   
 </div>
+
 

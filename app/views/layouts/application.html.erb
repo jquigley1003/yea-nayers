@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html ng-app="YeaNayers">
 <head>
   <title>Yeanayers</title>
   <%= stylesheet_link_tag    'application', media: 'all' %>
@@ -8,8 +8,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
 </head>
 <body>
-
-<%= yield %>
-
+<div>
+  <div ng-include="'_navbar2.html'"></div>
+  <%= yield %>
+</div>
 </body>
 </html>

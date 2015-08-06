@@ -1,6 +1,7 @@
 angular.module('YeaNayers')
-  .controller('HomeCtrl', ['$scope', '$http', function($scope, $http) {
+  .controller('HomeCtrl', ['$scope', '$http', 'voteService', function($scope, $http, voteService) {
 
+    var homeCtrl = this
     $scope.searchBills = function() {
 
       $scope.billForm.query;
@@ -14,86 +15,12 @@ angular.module('YeaNayers')
       });
     };
 
-    function getVote(chamber, voteRollCall) {
-      passageSuspension = _.find(voteRollCall, { 'chamber': chamber, 'category': 'passage_suspension'});
-      if (passageSuspension) {
-        return _.find(voteRollCall, function(vote) {
-          return vote.chamber === chamber && vote.category === 'passage_suspension';
-        })
-      }
-      else {
-        return _.find(voteRollCall, function(vote) {
-          return vote.chamber === chamber && vote.category === 'passage';
-        })        
-      }
-    }
+    homeCtrl.findVoteRollCall = voteService.findVoteRollCall;
 
-    $scope.findVoteRollCall = function(bill) {
-
-      bill.voteInfo = false;
-      bill.noVoteInfo = true;
-      bill.yesSenateVote = false;
-      bill.yesCongressVote = false;
-      bill.noSenateVote = true;
-      bill.noCongressVote = true;
-      $scope.showVotes = false;
-      $scope.congressionalVoteByMember = null;
-      $scope.senateVoteByMember = null;
-
-// Find the voting results for a specific bill
-
-      var govTrackUrl2 = 'https://www.govtrack.us/api/v2/vote?related_bill=' + bill.id
-      $http.get(govTrackUrl2).success(function(data) {
-
-        bill.voteInfo = true;
-        bill.noVoteInfo = false;
-
-        var voteRollCall = data.objects;
-
-        console.log('voteRollCall.length: ' + voteRollCall.length);
-
-// Check for any House votes for this specific bill
-
-        var congressionalVote = getVote('house',  voteRollCall);
-
-        if (congressionalVote) {
-
-          bill.yesCongressVote = true;
-          bill.noCongressVote = false;
-          $scope.showVotes = true;
-
-          var congressionalVoteId = congressionalVote.options[0].vote;
-          console.log('congressionalVote = ' + congressionalVoteId + ' // should be 116058');
-
-          var govTrackUrl3 = 'https://www.govtrack.us/api/v2/vote_voter?vote=' + 
-            congressionalVoteId + '&limit=450';
-          $http.get(govTrackUrl3).success(function(data) {
-            $scope.congressionalVoteByMember = data.objects;
-            console.log('congressionalVoteByMember.length: ' + $scope.congressionalVoteByMember.length);         
-          });
-
-        }
-
-// Check for any Senate votes for this specific bill
-
-        var senateVote = getVote('senate', voteRollCall);
-
-        if (senateVote) {
-
-          bill.yesSenateVote = true;
-          bill.noSenateVote = false;
-          $scope.showVotes = true;
-
-          var senateVoteId = senateVote.options[0].vote;
-          console.log('senateVote = ' + senateVoteId + ' // should be 116091');
-
-          var govTrackUrl4 = 'https://www.govtrack.us/api/v2/vote_voter?vote=' + 
-            senateVoteId + '&limit=450';
-          $http.get(govTrackUrl4).success(function(data) {
-            $scope.senateVoteByMember = data.objects;
-            console.log('senateVoteByMember.length: ' + $scope.senateVoteByMember.length);
-          });        
-        }
-      });
-    };
+    homeCtrl.showVotes = voteService;
+    homeCtrl.houseVote = voteService;
+    homeCtrl.senateVote = voteService;
+    homeCtrl.voteInfo = voteService;
+    homeCtrl.noHouseVote = voteService;
+    homeCtrl.noSenateVote = voteService;
   }]);
