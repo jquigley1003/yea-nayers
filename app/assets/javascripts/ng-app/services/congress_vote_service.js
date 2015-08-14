@@ -1,5 +1,5 @@
 angular.module('YeaNayers')
-  .service('voteService',['$http', function VoteService($http) {
+  .service('voteService',['$http','$state', function VoteService($http, $state) {
     
     var votesOnBill = this;
 
@@ -30,6 +30,8 @@ angular.module('YeaNayers')
       votesOnBill.houseVoteByMember = null;
       votesOnBill.senateVoteByMember = null;
 
+
+
 // Find the voting results for a specific bill
 
       var govTrackUrl2 = 'https://www.govtrack.us/api/v2/vote?related_bill=' + bill.id
@@ -41,6 +43,10 @@ angular.module('YeaNayers')
         var voteRollCall = data.objects;
 
         console.log('voteRollCall.length: ' + voteRollCall.length);
+        
+        if (voteRollCall.length == 0 ) {
+          alert('No Votes on This Bill');
+        };
 
 // Check for any House votes for this specific bill
 
@@ -59,9 +65,12 @@ angular.module('YeaNayers')
             houseVoteId + '&limit=450';
           $http.get(govTrackUrl3).success(function(data) {
             votesOnBill.houseVoteByMember = data.objects;
-            console.log('votesOnBill.houseVoteByMember.length: ' + votesOnBill.houseVoteByMember.length);         
+            console.log('votesOnBill.houseVoteByMember.length: ' + votesOnBill.houseVoteByMember.length);
+            alert('House Votes On Bill '+ bill.display_number + ": " + votesOnBill.houseVoteByMember.length);        
           });
-
+        }
+        else {
+          alert('No House Votes On Bill '+ bill.display_number);
         }
 
 // Check for any Senate votes for this specific bill
@@ -82,7 +91,12 @@ angular.module('YeaNayers')
           $http.get(govTrackUrl4).success(function(data) {
             votesOnBill.senateVoteByMember = data.objects;
             console.log('votesOnBill.senateVoteByMember.length: ' + votesOnBill.senateVoteByMember.length);
+            alert('Senate Votes On Bill '+ bill.display_number + ": " + votesOnBill.senateVoteByMember.length);
           });        
+        }
+        else {
+          alert('No Senate Votes On Bill '+ bill.display_number);
+          $state.go('home');
         }
       });
     };

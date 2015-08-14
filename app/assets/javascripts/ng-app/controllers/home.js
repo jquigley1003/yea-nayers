@@ -1,11 +1,16 @@
 angular.module('YeaNayers')
   .controller('HomeCtrl', ['$scope', '$http', 'voteService', function($scope, $http, voteService) {
 
-    var homeCtrl = this
+    var homeCtrl = this;
+
+    $scope.myData = voteService;
+
     $scope.searchBills = function() {
 
       $scope.billForm.query;
       $scope.congressForm.query;
+
+
 
       var govTrackUrl = 'https://www.govtrack.us/api/v2/bill' +
       '?q=' + $scope.billForm.query + '&congress=' + $scope.congressForm.query + '&order_by=-current_status_date&limit=600';
@@ -18,8 +23,7 @@ angular.module('YeaNayers')
     homeCtrl.findVoteRollCall = voteService.findVoteRollCall;
 
     homeCtrl.showVotes = voteService;
-    homeCtrl.houseVote = voteService;
-    homeCtrl.senateVote = voteService;
+    homeCtrl.congressVote = voteService;
     homeCtrl.voteInfo = voteService;
     homeCtrl.noHouseVote = voteService;
     homeCtrl.noSenateVote = voteService;

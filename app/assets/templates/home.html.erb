@@ -1,37 +1,47 @@
-<div class="row">
-  <div class="col-xs-4 col-md-4">
-    <h1>YeaNayers</h1>
-    <h5>Search Congressional Bills and Find Out How Your Representative or Senator Voted!</h3>
-<!--       <div ng-class="homeCtrl.houseVote.billResult">
-        {{ homeCtrl.houseVote.billResult }}
-      </div> -->
-    <form class="form-inline" ng-submit="searchBills()" role="form" novalidate>
-    <div class="form-group">
-      <div class="input-group">
-        <label class="sr-only">Subject</label>
-        <input type="text" class="form-control" ng-model="billForm.query" required placeholder="Search for Bills">
-        <select type="text" class="form-control" ng-model="congressForm.query">
-          <option value="114" selected>114th Congress: 2015-2017</option>
-          <option value="113">113th Congress: 2013-2015</option>
-          <option value="112">112th Congress: 2011-2013</option>
-        </select>
+<div class="container">
+  <div class="row">
+    <div class="col-md-6">
+      <h1>YeaNayers</h1>
+      <h3>Search Congressional Bills and Find Out How Your Representative or Senator Voted!</h3>
+  <!--       <div ng-class="homeCtrl.houseVote.billResult">
+          {{ homeCtrl.houseVote.billResult }}
+        </div> -->
+      <form class="form-inline" ng-submit="searchBills()" role="form" novalidate>
+      <div class="form-group">
+        <div class="input-group">
+          <label class="sr-only">Subject</label>
+          <input type="text" class="form-control" ng-model="billForm.query" required placeholder="Search for Bills">
+          <select type="text" class="form-control" ng-model="congressForm.query">
+            <option value="114" selected>114th Congress: 2015-2017</option>
+            <option value="113">113th Congress: 2013-2015</option>
+            <option value="112">112th Congress: 2011-2013</option>
+          </select>
+          <button type="submit" class="btn btn-primary btn-md">Search Now</button>
+        </div>
+      </div>
+      </form>
+      <div>
+        <p>1. Search by name or category & congressional session</p>
+        <p>2. Click any returned bill for information</p>
+        <p>3. If voting occured, click map for visual results</p>
       </div>
     </div>
-    <button type="submit" class="btn btn-primary btn-md">Search Now</button>
-    </form>
+    <div class="col-md-6">
+      <my-map-four-b data='myData' >
+      </my-map-four-b>
+    </div>
   </div>
-  <div class="col-xs-8 col-md-8" id="mapContainer" my-map-four >
-  </div>
-</div>
-<div class="row">
-  <div class="col-xs-6 col-md-6" ng-include="'bills.html'">
-  </div>
-  <div class ="col-xs-6 col-md-6" ng-show="homeCtrl.showVotes">
-    <ul ng-repeat="vote in homeCtrl.houseVote.houseVoteByMember" style="display:inline-block; width:600px;">
-      <li style="font-size:12px;">{{vote.option.value}} {{vote.person.name}}</li>
-    </ul>
-    <ul ng-repeat="vote in homeCtrl.senateVote.senateVoteByMember" style="display:inline-block; width:600px;">
-      <li style="font-size:12px;">{{vote.option.value}} {{vote.person.name}}</li>
-    </ul>
+  <div class="row">
+    <!-- Add the extra clearfix for only the required viewport -->
+    <div class="col-md-6" ng-include="'bills.html'">
+    </div>
+    <div class ="col-md-6" ng-show="homeCtrl.showVotes">
+      <ul ng-repeat="vote in homeCtrl.congressVote.houseVoteByMember" style="display:inline-block; width:600px;">
+        <li style="font-size:12px;">{{vote.option.value}} {{vote.person.name}} {{vote.person_role.state}}</li>
+      </ul>
+      <ul ng-repeat="vote in homeCtrl.congressVote.senateVoteByMember" style="display:inline-block; width:600px;">
+        <li style="font-size:12px;">{{vote.option.value}} {{vote.person.name}} {{vote.person_role.state}}</li>
+      </ul>
+    </div>
   </div>
 </div>

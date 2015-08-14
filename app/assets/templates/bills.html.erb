@@ -4,6 +4,7 @@
   <p>{{bill.current_status_label}}</p>
   <p>Status Date: {{bill.current_status_date}}</p>
   <p>Status Description: {{bill.current_status_description}}</p>
+  <p style="font-weight:bold; color: #ff0000;">Click For More Information</p>
   <div ng-show="bill.voteInfo">
     <p>{{bill.sponsor.id}}</p>
     <p><span style="font-weight:bold;">Bill Sponsor: </span>{{bill.sponsor.name}}</p>
@@ -19,8 +20,9 @@
       <p>No Final Votes From The House</p>
     </div>
     <div class="bold-border" ng-mouseover="bill.voteInfo = ! bill.voteInfo">
-      Place Cursor Here Close!
+      Place Cursor Here To Close!
     </div>
+    <p style="font-weight:bold; color: #ff0000;">Click On The Map To Update Voting Information On This Bill!</p>
   </div>   
 </div>
 
