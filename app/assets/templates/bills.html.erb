@@ -1,10 +1,12 @@
 <h2>Bills in the {{congressForm.query}} U.S. Congress</h2>
-<div class="bill-frame" ng-repeat="bill in bills" ng-click="homeCtrl.findVoteRollCall(bill)">
-  <p style="font-weight:bold;">{{bill.title}}</p>
-  <p>{{bill.current_status_label}}</p>
-  <p>Status Date: {{bill.current_status_date}}</p>
-  <p>Status Description: {{bill.current_status_description}}</p>
-  <p style="font-weight:bold; color: #ff0000;">Click For More Information</p>
+<div class="bill-frame" ng-repeat="bill in bills">
+  <div ng-click="homeCtrl.findVoteRollCall(bill)">
+    <p style="font-weight:bold;">{{bill.title}}</p>
+    <p>{{bill.current_status_label}}</p>
+    <p>Status Date: {{bill.current_status_date}}</p>
+    <p>Status Description: {{bill.current_status_description}}</p>
+    <p style="font-weight:bold; color: #ff0000;">Click For More Information</p>
+  </div>
   <div ng-show="bill.voteInfo">
     <p>{{bill.sponsor.id}}</p>
     <p><span style="font-weight:bold;">Bill Sponsor: </span>{{bill.sponsor.name}}</p>

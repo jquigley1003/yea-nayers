@@ -22,6 +22,12 @@ angular.module( 'YeaNayers').directive( 'myMapFourB', [ 'voteService', '$state',
             dragColor;
 
         var components = color.domain().map(function() { return []; });
+
+        // Define 'div' for tooltips
+        var div = d3.select("body")
+          .append("div")             // declare the tooltip div 
+          .attr("class", "tooltip")  // apply the 'tooltip' class
+          .style("opacity", 0);      // set the opacity to nil
           
         var svg = d3.select(element[0])
           .append("svg")
@@ -180,7 +186,26 @@ angular.module( 'YeaNayers').directive( 'myMapFourB', [ 'voteService', '$state',
                     else {
                       return "green" 
                     };
-                  });
+                  })
+                  // Tooltip stuff after this
+                  .on("mouseover", function(d) {    
+                    div.transition()
+                      .duration(500)  
+                      .style("opacity", 0);
+                    div.transition()
+                      .duration(200)  
+                      .style("opacity", .9);  
+                    div .html(
+                      d.option.value + '<br/><a href= "' + d.person.link +
+                      '" target = "_blank">' +
+                      d.person.name +
+                      '</a>' + '<br/>' + 
+                      '<img src="https://www.govtrack.us/data/photos/' +
+                      d.person.id +
+                      '-100px.jpeg" />')  
+                      .style("left", (d3.event.pageX - 130) + "px")      
+                      .style("top", (d3.event.pageY - 50) + "px");
+                  });                  
               }
               // Add the senate vote data to the U.S. map
               if(data.senateVoteByMember != undefined){               
@@ -221,7 +246,26 @@ angular.module( 'YeaNayers').directive( 'myMapFourB', [ 'voteService', '$state',
                     } 
                     else {
                       return "green" 
-                    };
+                    }
+                  })
+                  // Tooltip stuff after this
+                  .on("mouseover", function(d) {    
+                    div.transition()
+                      .duration(500)  
+                      .style("opacity", 0);
+                    div.transition()
+                      .duration(200)  
+                      .style("opacity", .9);  
+                    div .html(
+                      d.option.value + '<br/><a href= "' + d.person.link +
+                      '" target = "_blank">' +
+                      d.person.name +
+                      '</a>' + '<br/>' + 
+                      '<img src="https://www.govtrack.us/data/photos/' +
+                      d.person.id +
+                      '-100px.jpeg" />')  
+                      .style("left", (d3.event.pageX - 130) + "px")      
+                      .style("top", (d3.event.pageY - 50) + "px");
                   }); 
               }
             // }  //end of if statement
